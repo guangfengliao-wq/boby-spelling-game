@@ -55,16 +55,31 @@ export async function publishRelease({ api, repository, version, commit, filenam
   }
   const assets = await api(`${base}/releases/${release.id}/assets?per_page=100`);
   let asset = assets.find(item => item.name === filename);
+  if (asset?.state === 'starter') {
+    if (!release.draft) throw new Error('已发布版本含未完成的附件，请在 GitHub 检查后重试。');
+    console.log('清理上次上传中断留下的草稿附件，重新上传…');
+    await api(`${base}/releases/assets/${asset.id}`, { method: 'DELETE' });
+    asset = null;
+  }
+  const verify = async item => {
+    if (item.state && item.state !== 'uploaded') throw new Error('附件上传尚未完成，草稿已保留，请重试 npm run release。');
+    if (item.size !== bytes.length) return false;
+    if (item.digest) return item.digest.toLowerCase() === `sha256:${digest}`;
+    console.log('GitHub 未返回摘要，正在下载附件校验 SHA-256…');
+    const remoteBytes = await api(`${base}/releases/assets/${item.id}`, { binary: true });
+    return createHash('sha256').update(remoteBytes).digest('hex') === digest;
+  };
   if (asset) {
-    if (asset.size !== bytes.length || asset.digest !== `sha256:${digest}`) {
-      throw new Error('同名附件已存在，但内容不同或无法校验；不会覆盖，请检查版本号。');
+    if (!await verify(asset)) {
+      throw new Error('同名附件已存在，但内容不同；不会覆盖，请检查版本号。');
     }
   } else {
     const uploadUrl = new URL(release.upload_url.replace(/\{.*$/, ''));
     if (uploadUrl.origin !== 'https://uploads.github.com') throw new Error('GitHub 上传地址异常。');
     uploadUrl.searchParams.set('name', filename);
+    console.log('正在上传 APK，请保持网络连接…');
     asset = await api(uploadUrl.href, { method: 'POST', bytes });
-    if (asset.size !== bytes.length || asset.digest !== `sha256:${digest}`) throw new Error('上传文件校验失败，发布草稿已保留，请检查后重试。');
+    if (!await verify(asset)) throw new Error('上传文件校验失败，发布草稿已保留，请检查后重试。');
   }
   if (release.draft) {
     release = await api(`${base}/releases/${release.id}`, { method: 'PATCH', json: { draft: false } });
@@ -106,20 +121,22 @@ async function main() {
     token = credential.split(/\r?\n/).find(line => line.startsWith('password='))?.slice(9);
   }
   if (!token) throw new Error('未找到 GitHub 凭据，请先登录 Git，或设置 GH_TOKEN。');
-  const api = async (url, { method = 'GET', json, bytes: upload, allow404 = false } = {}) => {
+  const api = async (url, { method = 'GET', json, bytes: upload, allow404 = false, binary = false } = {}) => {
     const response = await fetch(url, {
       method,
       headers: {
-        Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json',
+        Authorization: `Bearer ${token}`, Accept: binary ? 'application/octet-stream' : 'application/vnd.github+json',
         'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'boby-spelling-game',
         ...(json ? { 'Content-Type': 'application/json' } : {}),
         ...(upload ? { 'Content-Type': 'application/vnd.android.package-archive' } : {}),
       },
       body: upload || (json ? JSON.stringify(json) : undefined),
-      signal: AbortSignal.timeout(180000),
+      signal: AbortSignal.timeout(upload || binary ? 600000 : 60000),
     });
     if (allow404 && response.status === 404) return null;
     if (!response.ok) throw new Error(`GitHub 请求失败（HTTP ${response.status}），请检查账号的仓库写入权限和网络；可重试命令。`);
+    if (response.status === 204) return null;
+    if (binary) return Buffer.from(await response.arrayBuffer());
     return response.json();
   };
   const notesPath = join(root, 'RELEASE_NOTES.md');
