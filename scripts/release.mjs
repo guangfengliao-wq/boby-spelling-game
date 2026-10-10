@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
+import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import QRCode from 'qrcode';
 import { createHash } from 'node:crypto';
 import { dirname, join, resolve } from 'node:path';
@@ -35,7 +35,7 @@ export function parseRepository(remote) {
 }
 
 // Keep remote changes separate from local validation so tests never publish.
-export async function publishRelease({ api, repository, version, commit, filename, bytes, digest }) {
+export async function publishRelease({ api, repository, version, commit, filename, bytes, digest, notes = '' }) {
   const base = `https://api.github.com/repos/${repository}`;
   const tag = `v${version}`;
   let release = await api(`${base}/releases/tags/${tag}`, { allow404: true });
@@ -50,7 +50,7 @@ export async function publishRelease({ api, repository, version, commit, filenam
   if (!release) {
     release = await api(`${base}/releases`, { method: 'POST', json: {
       tag_name: tag, target_commitish: commit, name: `${tag} - 英文拼写练习`, draft: true,
-      body: `下载附件 \`${filename}\` 安装（Android 7.0 及以上）。\n\n本安装包为调试签名版本；覆盖安装需保持签名一致，卸载会清除本地数据。\n\nSHA-256：\`${digest}\`\n\n音频来源与授权说明见仓库 README。`,
+      body: `${notes ? `${notes.trim()}\n\n` : ''}下载附件 \`${filename}\` 安装（Android 7.0 及以上）。\n\n本安装包为调试签名版本；覆盖安装需保持签名一致，卸载会清除本地数据。\n\nSHA-256：\`${digest}\`\n\n音频来源与授权说明见仓库 README。`,
     } });
   }
   const assets = await api(`${base}/releases/${release.id}/assets?per_page=100`);
@@ -122,7 +122,9 @@ async function main() {
     if (!response.ok) throw new Error(`GitHub 请求失败（HTTP ${response.status}），请检查账号的仓库写入权限和网络；可重试命令。`);
     return response.json();
   };
-  const result = await publishRelease({ api, repository, version, commit, filename, bytes, digest });
+  const notesPath = join(root, 'RELEASE_NOTES.md');
+  const notes = existsSync(notesPath) ? readFileSync(notesPath, 'utf8') : '';
+  const result = await publishRelease({ api, repository, version, commit, filename, bytes, digest, notes });
   console.log(`发布完成：${result.release}\nAPK 下载：${result.download}`);
   try {
     const qr = await createReleaseQr(result.download, version);

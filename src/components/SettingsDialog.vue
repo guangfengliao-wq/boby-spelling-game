@@ -31,6 +31,7 @@
           <span></span>
         </button>
       </div>
+      <AppUpdate />
       <div class="settings-row reset-row">
         <div>
           <h3>清除数据</h3>
@@ -45,6 +46,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useSettings } from '../composables/useSettings'
+import AppUpdate from './AppUpdate.vue'
 
 defineEmits<{ reset: [] }>()
 const dialog = ref<HTMLDialogElement | null>(null)
