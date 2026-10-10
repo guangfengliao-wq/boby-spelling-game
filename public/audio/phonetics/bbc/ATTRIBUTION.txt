@@ -1,0 +1,18 @@
+BBC Learning English — The Sounds of English: interactive sound chart
+Voice: original male speaker in the BBC sound chart (not Alex Bellem's videos)
+Source: https://www.bbc.co.uk/worldservice/learningenglish/grammar/pron/sounds/chart.shtml
+Original chart: https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf
+
+Copyright BBC. These recordings are not covered by the MIT license of the
+previous third-party audio collection. This folder contains the 44 isolated
+pronunciations from the publicly accessible BBC sound chart for this personal
+English-learning app. No BBC endorsement is implied.
+
+Changes: extracted embedded MP3 streams from the chart's DefineSound records.
+MP3 frames are unchanged; no synthesis, cropping, pitch or speed adjustment.
+Export names, sound IDs, sample counts and checksums are recorded in clips.json.
+The displayed symbols are normalized to the app's IPA notation (for example
+g to ɡ, ʤ to dʒ, ʧ to tʃ, and the chart's l glyph to l).
+
+The remaining /ts/, /dz/, /tr/ and /dr/ recordings are the existing files in
+the parent directory; see ../ATTRIBUTION.txt for their provenance.

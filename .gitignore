@@ -1,0 +1,19 @@
+node_modules
+dist
+.npm-cache
+release/
+.gradle-user-home/
+.audio-tools/
+
+# Local secrets and signing keys
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.pem
+*.key
+
+# Local documents and generated scratch image
+/doc/
+/System.Drawing.Drawing2D.GraphicsPath

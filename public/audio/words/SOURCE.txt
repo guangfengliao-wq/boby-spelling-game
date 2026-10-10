@@ -1,0 +1,5 @@
+Synthetic English speech generated with Microsoft Edge TTS (en-GB-SoniaNeural, rate -15%).
+Letter clips: rate +15%, leading/trailing silence trimmed with FFmpeg.
+Generation tool: edge-tts 7.2.8, https://github.com/rany2/edge-tts
+These MP3 files are bundled assets. Playback does not contact any speech service.
+Pronunciation expansions: Mr -> Mister; Ms -> Ms.; try sth on -> try something on; be about to do sth -> be about to do something.

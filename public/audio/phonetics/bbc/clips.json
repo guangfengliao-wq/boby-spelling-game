@@ -1,0 +1,442 @@
+{
+  "iː": {
+    "file": "/audio/phonetics/bbc/vow_1.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 12,
+    "exportName": "vow_1s",
+    "samples": 10944,
+    "sampleRate": 22050,
+    "sha256": "bd0dfe46e5edb73db58e0fafe273df4a5c3f0f77ff59ba25b732461c1caa66c2"
+  },
+  "ɪ": {
+    "file": "/audio/phonetics/bbc/vow_2.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 8,
+    "exportName": "vow_2s",
+    "samples": 6336,
+    "sampleRate": 22050,
+    "sha256": "0e4a99a5b493ec92db678dbbbec743a9f949af36c090d698d4bb64b52b736354"
+  },
+  "e": {
+    "file": "/audio/phonetics/bbc/vow_3.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 7,
+    "exportName": "vow_3s",
+    "samples": 6336,
+    "sampleRate": 22050,
+    "sha256": "b0f199cc3c3bb9143dfabacee90b06821abb43b6ec717b722c009fe8fba44025"
+  },
+  "æ": {
+    "file": "/audio/phonetics/bbc/vow_4.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 6,
+    "exportName": "vow_4s",
+    "samples": 6912,
+    "sampleRate": 22050,
+    "sha256": "4f6d7dc7a415fb73e908d3761d3b59d7c9ac1c0502f85284700a44677fb0a2ca"
+  },
+  "ɑː": {
+    "file": "/audio/phonetics/bbc/vow_5.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 5,
+    "exportName": "vow_5s",
+    "samples": 11520,
+    "sampleRate": 22050,
+    "sha256": "fa05b536b767f8d2fc1206fbd279b0701b8e7beb7003305360d5bace5c809a41"
+  },
+  "ʌ": {
+    "file": "/audio/phonetics/bbc/vow_6.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 4,
+    "exportName": "vow_6s",
+    "samples": 6336,
+    "sampleRate": 22050,
+    "sha256": "a7c15d5e9e88a7b1c2eb4d67d1969ab5b9b30b7df8760a4671c9168028258395"
+  },
+  "ɒ": {
+    "file": "/audio/phonetics/bbc/vow_7.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 3,
+    "exportName": "vow_7s",
+    "samples": 7488,
+    "sampleRate": 22050,
+    "sha256": "b691f50ee12ec6ca46ed80e02ff685afc79182ed582ede012b3ed73628deae43"
+  },
+  "ɔː": {
+    "file": "/audio/phonetics/bbc/vow_8.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 2,
+    "exportName": "vow_8s",
+    "samples": 12672,
+    "sampleRate": 22050,
+    "sha256": "e5ec574bb19c2c702882cc07f1c4fdbda9b24fa1328175c6e83405f9ac98921a"
+  },
+  "ʊ": {
+    "file": "/audio/phonetics/bbc/vow_9.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 1,
+    "exportName": "vow_9s",
+    "samples": 7488,
+    "sampleRate": 22050,
+    "sha256": "c5d55102f1efde85158477759abd9c77f50e60729acfbe062740af44a719a3a3"
+  },
+  "uː": {
+    "file": "/audio/phonetics/bbc/vow_10.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 11,
+    "exportName": "vow_10s",
+    "samples": 13248,
+    "sampleRate": 22050,
+    "sha256": "124355d18d3b969686d5d26c0a9fa3f213819228ae94a4a367b992385c9193f5"
+  },
+  "ɜː": {
+    "file": "/audio/phonetics/bbc/vow_11.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 10,
+    "exportName": "vow_11s",
+    "samples": 13248,
+    "sampleRate": 22050,
+    "sha256": "50ae5bc47a758b03815231346327df55035fcedc09e08acd201657543e9b867f"
+  },
+  "ə": {
+    "file": "/audio/phonetics/bbc/vow_12.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 9,
+    "exportName": "vow_12s",
+    "samples": 5760,
+    "sampleRate": 22050,
+    "sha256": "56757e5e181f5e5ab7147101052d59d006f8ce4ada378a80e31f90dce68ab181"
+  },
+  "eɪ": {
+    "file": "/audio/phonetics/bbc/dip_1.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 20,
+    "exportName": "dip_1s",
+    "samples": 12672,
+    "sampleRate": 22050,
+    "sha256": "b9899baf5fe5cd471b113c4179e85019a5479d2b9b90dd4480bbc8fc7e5318cf"
+  },
+  "aɪ": {
+    "file": "/audio/phonetics/bbc/dip_2.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 19,
+    "exportName": "dip_2s",
+    "samples": 13248,
+    "sampleRate": 22050,
+    "sha256": "3961142fce9437f5918094534bc4855d57ee0ff8cc35ac481167a96bec50a528"
+  },
+  "ɔɪ": {
+    "file": "/audio/phonetics/bbc/dip_3.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 18,
+    "exportName": "dip_3s",
+    "samples": 13248,
+    "sampleRate": 22050,
+    "sha256": "ea5328184858c74de373d9a6cddd403fa937b5f9fe4c9e5c3164e43b2502672c"
+  },
+  "əʊ": {
+    "file": "/audio/phonetics/bbc/dip_4.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 17,
+    "exportName": "dip_4s",
+    "samples": 13248,
+    "sampleRate": 22050,
+    "sha256": "92ab3953d488e7afa372c1779c0bc7ae53e3e5172d0ae83646747feeb1f403a1"
+  },
+  "aʊ": {
+    "file": "/audio/phonetics/bbc/dip_5.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 16,
+    "exportName": "dip_5s",
+    "samples": 13824,
+    "sampleRate": 22050,
+    "sha256": "12b90ca25044b3688db37436b4b058029664c7e5cdab75c0f9a1fd7e7f2a32cf"
+  },
+  "eə": {
+    "file": "/audio/phonetics/bbc/dip_6.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 15,
+    "exportName": "dip_6s",
+    "samples": 11520,
+    "sampleRate": 22050,
+    "sha256": "57aad702e62d64217628e90043895d9ef28ad39fb5c9b9844483a327a9991d4b"
+  },
+  "ɪə": {
+    "file": "/audio/phonetics/bbc/dip_7.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 14,
+    "exportName": "dip_7s",
+    "samples": 11520,
+    "sampleRate": 22050,
+    "sha256": "413c10dba2c563c5e7ee3bcd402539381a9b3876639c3e4377b7104c56ca7ea0"
+  },
+  "ʊə": {
+    "file": "/audio/phonetics/bbc/dip_8.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 13,
+    "exportName": "dip_8s",
+    "samples": 10368,
+    "sampleRate": 22050,
+    "sha256": "d561674572f8c9ae83da30b9e0da49dcbd9e670ad36cf9bfeee6e36560b59068"
+  },
+  "p": {
+    "file": "/audio/phonetics/bbc/con_1.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 44,
+    "exportName": "con_1s",
+    "samples": 5760,
+    "sampleRate": 22050,
+    "sha256": "cc73d2a82c0ccebb175444b38190fdf38c6825ca72085a3a73073902a3106f58"
+  },
+  "b": {
+    "file": "/audio/phonetics/bbc/con_2.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 33,
+    "exportName": "con_2s",
+    "samples": 10368,
+    "sampleRate": 22050,
+    "sha256": "65ddfc380fd8a99f4767bcd5a65d199c3b9a0ea1816056ee28fcd8f77dc2e747"
+  },
+  "t": {
+    "file": "/audio/phonetics/bbc/con_3.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 27,
+    "exportName": "con_3s",
+    "samples": 5184,
+    "sampleRate": 22050,
+    "sha256": "3282faf3b9941f317659b8f74f8399344b92f68bf6bb4ffe210e9150ce79ab66"
+  },
+  "d": {
+    "file": "/audio/phonetics/bbc/con_4.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 26,
+    "exportName": "con_4s",
+    "samples": 6336,
+    "sampleRate": 22050,
+    "sha256": "82a523befba12d507f5506ed4801c986e5a1f89534b788874d222d863d19634b"
+  },
+  "k": {
+    "file": "/audio/phonetics/bbc/con_5.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 25,
+    "exportName": "con_5s",
+    "samples": 6336,
+    "sampleRate": 22050,
+    "sha256": "a25cf6c95e694187d9c6a9919053b9ca69563a842e04cccf7be18e88d0ebbb01"
+  },
+  "ɡ": {
+    "file": "/audio/phonetics/bbc/con_6.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 24,
+    "exportName": "con_6s",
+    "samples": 10944,
+    "sampleRate": 22050,
+    "sha256": "fd829f3b9b5a633582bd6f23e2db5db53819bea766e2a45ae81eefb648f15754"
+  },
+  "m": {
+    "file": "/audio/phonetics/bbc/con_7.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 23,
+    "exportName": "con_7s",
+    "samples": 11520,
+    "sampleRate": 22050,
+    "sha256": "213a15f0a0c0fbf5bf2d8cb32b2c3d94e2e18266463a8cb3b6ca10ce3316e41b"
+  },
+  "n": {
+    "file": "/audio/phonetics/bbc/con_8.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 22,
+    "exportName": "con_8s",
+    "samples": 11520,
+    "sampleRate": 22050,
+    "sha256": "3964eadc189677100329472dc887474c541026d2fa411e5f7fcc46a9a2b9ffc6"
+  },
+  "ŋ": {
+    "file": "/audio/phonetics/bbc/con_9.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 21,
+    "exportName": "con_9s",
+    "samples": 10368,
+    "sampleRate": 22050,
+    "sha256": "2431799a39de13a5cfbc29cfde4beca883c6f984d7b1128b5da4468b52be14fb"
+  },
+  "f": {
+    "file": "/audio/phonetics/bbc/con_10.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 43,
+    "exportName": "con_10s",
+    "samples": 9792,
+    "sampleRate": 22050,
+    "sha256": "6a61068c36d35f6f39ec83e3793e76c16774d8aa8718c36a617882b0450b47e8"
+  },
+  "v": {
+    "file": "/audio/phonetics/bbc/con_11.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 42,
+    "exportName": "con_11s",
+    "samples": 11520,
+    "sampleRate": 22050,
+    "sha256": "2e393e9dcb6a50b4fc56271a2540677a75f907d7391d127a012df412da4eaf9a"
+  },
+  "θ": {
+    "file": "/audio/phonetics/bbc/con_12.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 41,
+    "exportName": "con_12s",
+    "samples": 8640,
+    "sampleRate": 22050,
+    "sha256": "5338c1359713a7a60940ad0b7f7580635f650de6348c497f253c1a75fb5f1804"
+  },
+  "ð": {
+    "file": "/audio/phonetics/bbc/con_13.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 40,
+    "exportName": "con_13s",
+    "samples": 12096,
+    "sampleRate": 22050,
+    "sha256": "a256061dac1fa9d1efc43274ec3e61953aa3b247ee2c7604c7175bbf8621113d"
+  },
+  "s": {
+    "file": "/audio/phonetics/bbc/con_14.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 39,
+    "exportName": "con_14s",
+    "samples": 12096,
+    "sampleRate": 22050,
+    "sha256": "c6f7ffa70c632865506b890fbf59e43c49c77fb01cc95a2cc639e8c75619904a"
+  },
+  "z": {
+    "file": "/audio/phonetics/bbc/con_15.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 38,
+    "exportName": "con_15s",
+    "samples": 13248,
+    "sampleRate": 22050,
+    "sha256": "4d60f5ebe3a3e086a6984e7a4daf2d0c5f1d8a919df403fd8d560aae27f1d4ab"
+  },
+  "ʃ": {
+    "file": "/audio/phonetics/bbc/con_16.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 37,
+    "exportName": "con_16s",
+    "samples": 9792,
+    "sampleRate": 22050,
+    "sha256": "ab76286e5d1c7737c165a24de4eed31f9f030a1346b0ddf8dec373a41dbeb502"
+  },
+  "ʒ": {
+    "file": "/audio/phonetics/bbc/con_17.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 36,
+    "exportName": "con_17s",
+    "samples": 9792,
+    "sampleRate": 22050,
+    "sha256": "b0408d957a9710b76673dfc0b9237423a6b87d1b1952ca6be097be9dec723f66"
+  },
+  "h": {
+    "file": "/audio/phonetics/bbc/con_18.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 35,
+    "exportName": "con_18s",
+    "samples": 7488,
+    "sampleRate": 22050,
+    "sha256": "57465add5835bbe2211d82f23b25314596e1c8c630eb179b139f2ae047ed91a1"
+  },
+  "tʃ": {
+    "file": "/audio/phonetics/bbc/con_19.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 34,
+    "exportName": "con_19s",
+    "samples": 6912,
+    "sampleRate": 22050,
+    "sha256": "c508ca4162c416b49304682c0f31a8d64aa6791c7ed5c8a1e38c5f03c983292c"
+  },
+  "dʒ": {
+    "file": "/audio/phonetics/bbc/con_20.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 32,
+    "exportName": "con_20s",
+    "samples": 10368,
+    "sampleRate": 22050,
+    "sha256": "00e7505e6008c8acee6cf97a48d88f7b5dac174b5c6cc3fb9e237416a6848d30"
+  },
+  "r": {
+    "file": "/audio/phonetics/bbc/con_21.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 31,
+    "exportName": "con_21s",
+    "samples": 7488,
+    "sampleRate": 22050,
+    "sha256": "8c68dd6656d3150cd594e34faea1826bb09fee5c3be2e0563db15bb2c7ebb67b"
+  },
+  "l": {
+    "file": "/audio/phonetics/bbc/con_22.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 30,
+    "exportName": "con_22s",
+    "samples": 9792,
+    "sampleRate": 22050,
+    "sha256": "a9955740becda30ec3f1e3b41e0cd6cf31dde016e371f96db2f1e91b9d587ab2"
+  },
+  "j": {
+    "file": "/audio/phonetics/bbc/con_23.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 29,
+    "exportName": "con_23s",
+    "samples": 9216,
+    "sampleRate": 22050,
+    "sha256": "26de68712f58fd295bfa66faf20ae11f1c7cdd7a26a8dc0c73da0f9eeb2aca7c"
+  },
+  "w": {
+    "file": "/audio/phonetics/bbc/con_24.mp3",
+    "source": "https://www.bbc.co.uk/staticarchive/5236618f7a3a0c5b2675049ac8bc206bd9037caa.swf",
+    "sourceSha256": "7820fc8977e8ee53161900a12261105af9685fc313df9f97b2be18fc1050f851",
+    "soundId": 28,
+    "exportName": "con_24s",
+    "samples": 9216,
+    "sampleRate": 22050,
+    "sha256": "04269760cf1403258961f2c6cefe80f43712add2cc7bafd013988ef76a80a4ad"
+  }
+}

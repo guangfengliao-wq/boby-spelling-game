@@ -1,0 +1,2831 @@
+{
+  "semesters": [
+    {
+      "id": "grade-3-1",
+      "name": "三年级上学期",
+      "units": [
+        {
+          "id": "welcome",
+          "name": "Welcome unit",
+          "words": [
+            {
+              "en": "let",
+              "cn": "让（用于表示提议或帮忙）"
+            },
+            {
+              "en": "begin",
+              "cn": "开始"
+            },
+            {
+              "en": "join",
+              "cn": "加入"
+            },
+            {
+              "en": "in",
+              "cn": "在……中"
+            },
+            {
+              "en": "English",
+              "cn": "英语"
+            },
+            {
+              "en": "be",
+              "cn": "是（原形）"
+            },
+            {
+              "en": "am",
+              "cn": "是（与 I 连用）"
+            },
+            {
+              "en": "is",
+              "cn": "是（与 he、she、it 等连用）"
+            },
+            {
+              "en": "are",
+              "cn": "是（与 you、we、they 等连用）"
+            },
+            {
+              "en": "easy",
+              "cn": "容易的"
+            },
+            {
+              "en": "come",
+              "cn": "来"
+            },
+            {
+              "en": "come on",
+              "cn": "来吧"
+            },
+            {
+              "en": "and",
+              "cn": "和"
+            },
+            {
+              "en": "you",
+              "cn": "你；你们"
+            },
+            {
+              "en": "ready",
+              "cn": "准备好的"
+            },
+            {
+              "en": "kid",
+              "cn": "小孩，儿童"
+            },
+            {
+              "en": "yeah",
+              "cn": "是"
+            },
+            {
+              "en": "OK",
+              "cn": "行，可以"
+            },
+            {
+              "en": "listen",
+              "cn": "听"
+            },
+            {
+              "en": "sing",
+              "cn": "唱"
+            },
+            {
+              "en": "speak",
+              "cn": "说话"
+            },
+            {
+              "en": "act",
+              "cn": "表演"
+            },
+            {
+              "en": "draw",
+              "cn": "画，绘画"
+            },
+            {
+              "en": "look",
+              "cn": "看"
+            },
+            {
+              "en": "guess",
+              "cn": "猜；猜测"
+            },
+            {
+              "en": "write",
+              "cn": "写"
+            },
+            {
+              "en": "think",
+              "cn": "思考"
+            },
+            {
+              "en": "read",
+              "cn": "阅读"
+            },
+            {
+              "en": "colour",
+              "cn": "给……涂上颜色"
+            },
+            {
+              "en": "play",
+              "cn": "玩"
+            },
+            {
+              "en": "hello",
+              "cn": "你好"
+            }
+          ]
+        },
+        {
+          "id": "unit_1",
+          "name": "Unit 1",
+          "words": [
+            {
+              "en": "what",
+              "cn": "什么"
+            },
+            {
+              "en": "your",
+              "cn": "你的"
+            },
+            {
+              "en": "name",
+              "cn": "名字"
+            },
+            {
+              "en": "I",
+              "cn": "我"
+            },
+            {
+              "en": "go",
+              "cn": "走，去"
+            },
+            {
+              "en": "we",
+              "cn": "我们"
+            },
+            {
+              "en": "all",
+              "cn": "每一个"
+            },
+            {
+              "en": "love",
+              "cn": "喜爱"
+            },
+            {
+              "en": "a",
+              "cn": "一个（用于辅音音素前）"
+            },
+            {
+              "en": "an",
+              "cn": "一个（用于元音音素前）"
+            },
+            {
+              "en": "clever",
+              "cn": "聪明的"
+            },
+            {
+              "en": "bird",
+              "cn": "鸟"
+            },
+            {
+              "en": "him",
+              "cn": "他"
+            },
+            {
+              "en": "good",
+              "cn": "令人愉快的"
+            },
+            {
+              "en": "morning",
+              "cn": "早晨，早上"
+            },
+            {
+              "en": "good morning",
+              "cn": "早上好"
+            },
+            {
+              "en": "goodbye",
+              "cn": "再见"
+            },
+            {
+              "en": "bye",
+              "cn": "再见（goodbye 的简略形式）"
+            },
+            {
+              "en": "night",
+              "cn": "夜晚"
+            },
+            {
+              "en": "this",
+              "cn": "这，这个"
+            },
+            {
+              "en": "nice",
+              "cn": "令人愉快的"
+            },
+            {
+              "en": "to",
+              "cn": "（用于描述某种行为或状态）"
+            },
+            {
+              "en": "meet",
+              "cn": "认识，结识"
+            },
+            {
+              "en": "happy",
+              "cn": "快乐的，高兴的"
+            },
+            {
+              "en": "birthday",
+              "cn": "生日"
+            },
+            {
+              "en": "happy birthday",
+              "cn": "生日快乐"
+            },
+            {
+              "en": "afternoon",
+              "cn": "下午"
+            },
+            {
+              "en": "Ms",
+              "cn": "女士"
+            },
+            {
+              "en": "how",
+              "cn": "如何，怎样"
+            },
+            {
+              "en": "today",
+              "cn": "今天"
+            },
+            {
+              "en": "too",
+              "cn": "也"
+            },
+            {
+              "en": "fine",
+              "cn": "很好"
+            },
+            {
+              "en": "children",
+              "cn": "（child 的复数形式）儿童，小孩"
+            },
+            {
+              "en": "cut",
+              "cn": "剪"
+            },
+            {
+              "en": "my",
+              "cn": "我的"
+            },
+            {
+              "en": "hi",
+              "cn": "你好"
+            }
+          ]
+        },
+        {
+          "id": "unit_2",
+          "name": "Unit 2",
+          "words": [
+            {
+              "en": "colourful",
+              "cn": "色彩丰富的"
+            },
+            {
+              "en": "world",
+              "cn": "世界"
+            },
+            {
+              "en": "red",
+              "cn": "红色（的）"
+            },
+            {
+              "en": "pink",
+              "cn": "粉红色（的）"
+            },
+            {
+              "en": "yellow",
+              "cn": "黄色（的）"
+            },
+            {
+              "en": "orange",
+              "cn": "橙色（的）"
+            },
+            {
+              "en": "green",
+              "cn": "绿色（的）"
+            },
+            {
+              "en": "brown",
+              "cn": "棕色（的）"
+            },
+            {
+              "en": "black",
+              "cn": "黑色（的）"
+            },
+            {
+              "en": "blue",
+              "cn": "蓝色（的）"
+            },
+            {
+              "en": "white",
+              "cn": "白色（的）"
+            },
+            {
+              "en": "purple",
+              "cn": "紫色（的）"
+            },
+            {
+              "en": "the",
+              "cn": "（用于表示正在谈论一个已经提到过、已经知道，或是唯一存在的人或物）"
+            },
+            {
+              "en": "rainbow",
+              "cn": "彩虹"
+            },
+            {
+              "en": "it",
+              "cn": "它"
+            },
+            {
+              "en": "oh",
+              "cn": "噢，哦"
+            },
+            {
+              "en": "start",
+              "cn": "开始"
+            },
+            {
+              "en": "necklace",
+              "cn": "项链"
+            },
+            {
+              "en": "for",
+              "cn": "给"
+            },
+            {
+              "en": "mum",
+              "cn": "妈妈"
+            },
+            {
+              "en": "old",
+              "cn": "旧的"
+            },
+            {
+              "en": "can",
+              "cn": "能，可以"
+            },
+            {
+              "en": "paint",
+              "cn": "给……涂颜料"
+            },
+            {
+              "en": "only",
+              "cn": "只有，仅"
+            },
+            {
+              "en": "me",
+              "cn": "我"
+            },
+            {
+              "en": "thank",
+              "cn": "感谢"
+            },
+            {
+              "en": "dear",
+              "cn": "亲爱的"
+            },
+            {
+              "en": "at",
+              "cn": "朝，向"
+            },
+            {
+              "en": "butterfly",
+              "cn": "蝴蝶"
+            },
+            {
+              "en": "lovely",
+              "cn": "美丽的；可爱的"
+            },
+            {
+              "en": "little",
+              "cn": "小的"
+            },
+            {
+              "en": "bye-bye",
+              "cn": "再见，拜拜"
+            },
+            {
+              "en": "favourite",
+              "cn": "最喜欢的"
+            },
+            {
+              "en": "no",
+              "cn": "不，不是"
+            },
+            {
+              "en": "yes",
+              "cn": "是，对"
+            },
+            {
+              "en": "that",
+              "cn": "那，那个"
+            },
+            {
+              "en": "right",
+              "cn": "正确的，对的"
+            }
+          ]
+        },
+        {
+          "id": "unit_3",
+          "name": "Unit 3",
+          "words": [
+            {
+              "en": "number",
+              "cn": "数字"
+            },
+            {
+              "en": "fun",
+              "cn": "有趣的"
+            },
+            {
+              "en": "tiger",
+              "cn": "老虎"
+            },
+            {
+              "en": "jump",
+              "cn": "跳，跃"
+            },
+            {
+              "en": "do",
+              "cn": "做"
+            },
+            {
+              "en": "ten",
+              "cn": "十"
+            },
+            {
+              "en": "nine",
+              "cn": "九"
+            },
+            {
+              "en": "eight",
+              "cn": "八"
+            },
+            {
+              "en": "seven",
+              "cn": "七"
+            },
+            {
+              "en": "six",
+              "cn": "六"
+            },
+            {
+              "en": "five",
+              "cn": "五"
+            },
+            {
+              "en": "four",
+              "cn": "四"
+            },
+            {
+              "en": "three",
+              "cn": "三"
+            },
+            {
+              "en": "two",
+              "cn": "二"
+            },
+            {
+              "en": "one",
+              "cn": "一"
+            },
+            {
+              "en": "duck",
+              "cn": "鸭子"
+            },
+            {
+              "en": "show",
+              "cn": "节目"
+            },
+            {
+              "en": "about",
+              "cn": "大约"
+            },
+            {
+              "en": "be about to do sth",
+              "cn": "即将做某事"
+            },
+            {
+              "en": "dad",
+              "cn": "爸爸"
+            },
+            {
+              "en": "please",
+              "cn": "请"
+            },
+            {
+              "en": "hurry",
+              "cn": "赶紧，匆忙"
+            },
+            {
+              "en": "up",
+              "cn": "向上，往上"
+            },
+            {
+              "en": "hurry up",
+              "cn": "快点"
+            },
+            {
+              "en": "wrong",
+              "cn": "有问题的"
+            },
+            {
+              "en": "see",
+              "cn": "看见，看到"
+            },
+            {
+              "en": "many",
+              "cn": "许多"
+            },
+            {
+              "en": "how many",
+              "cn": "多少"
+            },
+            {
+              "en": "get",
+              "cn": "移动，去"
+            },
+            {
+              "en": "out",
+              "cn": "向外"
+            },
+            {
+              "en": "get out",
+              "cn": "出去"
+            },
+            {
+              "en": "have",
+              "cn": "进行"
+            },
+            {
+              "en": "have a look",
+              "cn": "看一下"
+            },
+            {
+              "en": "help",
+              "cn": "帮助"
+            },
+            {
+              "en": "great",
+              "cn": "极好的"
+            },
+            {
+              "en": "late",
+              "cn": "迟到的"
+            },
+            {
+              "en": "safe",
+              "cn": "安全的"
+            },
+            {
+              "en": "call",
+              "cn": "（给……）打电话"
+            }
+          ]
+        },
+        {
+          "id": "unit_4",
+          "name": "Unit 4",
+          "words": [
+            {
+              "en": "school",
+              "cn": "学校"
+            },
+            {
+              "en": "thing",
+              "cn": "东西，物"
+            },
+            {
+              "en": "pencil",
+              "cn": "铅笔"
+            },
+            {
+              "en": "case",
+              "cn": "盒子"
+            },
+            {
+              "en": "pencil case",
+              "cn": "笔袋；铅笔盒"
+            },
+            {
+              "en": "pen",
+              "cn": "钢笔"
+            },
+            {
+              "en": "eraser",
+              "cn": "橡皮"
+            },
+            {
+              "en": "schoolbag",
+              "cn": "书包"
+            },
+            {
+              "en": "ruler",
+              "cn": "尺子，直尺"
+            },
+            {
+              "en": "book",
+              "cn": "书籍"
+            },
+            {
+              "en": "home",
+              "cn": "到家，回家"
+            },
+            {
+              "en": "where",
+              "cn": "在哪里"
+            },
+            {
+              "en": "picture",
+              "cn": "图画"
+            },
+            {
+              "en": "on",
+              "cn": "在……上面"
+            },
+            {
+              "en": "wall",
+              "cn": "墙"
+            },
+            {
+              "en": "paper",
+              "cn": "纸"
+            },
+            {
+              "en": "open",
+              "cn": "打开"
+            },
+            {
+              "en": "take",
+              "cn": "拿"
+            },
+            {
+              "en": "take out",
+              "cn": "拿出"
+            },
+            {
+              "en": "rope",
+              "cn": "绳索"
+            },
+            {
+              "en": "skipping rope",
+              "cn": "跳绳"
+            }
+          ]
+        },
+        {
+          "id": "unit_5",
+          "name": "Unit 5",
+          "words": [
+            {
+              "en": "classroom",
+              "cn": "教室"
+            },
+            {
+              "en": "blackboard",
+              "cn": "黑板"
+            },
+            {
+              "en": "door",
+              "cn": "门"
+            },
+            {
+              "en": "window",
+              "cn": "窗户"
+            },
+            {
+              "en": "desk",
+              "cn": "书桌"
+            },
+            {
+              "en": "chair",
+              "cn": "椅子"
+            },
+            {
+              "en": "floor",
+              "cn": "地面"
+            },
+            {
+              "en": "ball",
+              "cn": "球"
+            },
+            {
+              "en": "behind",
+              "cn": "在……后面"
+            },
+            {
+              "en": "front",
+              "cn": "前面"
+            },
+            {
+              "en": "of",
+              "cn": "（用于指某物与某地或某物之间的位置关系）"
+            },
+            {
+              "en": "in front of",
+              "cn": "在……前面"
+            },
+            {
+              "en": "beside",
+              "cn": "在……旁边"
+            },
+            {
+              "en": "under",
+              "cn": "在……下面"
+            },
+            {
+              "en": "now",
+              "cn": "现在"
+            },
+            {
+              "en": "class",
+              "cn": "班，班级"
+            },
+            {
+              "en": "wow",
+              "cn": "哇，呀"
+            },
+            {
+              "en": "next",
+              "cn": "紧接下来；随后"
+            },
+            {
+              "en": "keep",
+              "cn": "饲养"
+            },
+            {
+              "en": "with",
+              "cn": "和……一起"
+            },
+            {
+              "en": "over",
+              "cn": "结束"
+            },
+            {
+              "en": "clean",
+              "cn": "（使）清洁，清理"
+            },
+            {
+              "en": "sweep",
+              "cn": "打扫，清扫"
+            },
+            {
+              "en": "put",
+              "cn": "放，放置"
+            },
+            {
+              "en": "tomorrow",
+              "cn": "明天"
+            },
+            {
+              "en": "they",
+              "cn": "他们；她们；它们"
+            }
+          ]
+        },
+        {
+          "id": "unit_6",
+          "name": "Unit 6",
+          "words": [
+            {
+              "en": "family",
+              "cn": "家，家庭"
+            },
+            {
+              "en": "brother",
+              "cn": "哥哥；弟弟"
+            },
+            {
+              "en": "sister",
+              "cn": "姐姐；妹妹"
+            },
+            {
+              "en": "grandpa",
+              "cn": "爷爷；外公"
+            },
+            {
+              "en": "grandma",
+              "cn": "奶奶；外婆"
+            },
+            {
+              "en": "some",
+              "cn": "一些"
+            },
+            {
+              "en": "tea",
+              "cn": "茶"
+            },
+            {
+              "en": "uncle",
+              "cn": "叔叔；伯伯；舅舅；姑父；姨父"
+            },
+            {
+              "en": "aunt",
+              "cn": "阿姨；姑妈；伯母；舅妈；姨妈"
+            },
+            {
+              "en": "long",
+              "cn": "长时间的"
+            },
+            {
+              "en": "time",
+              "cn": "时间"
+            },
+            {
+              "en": "sport",
+              "cn": "体育运动"
+            },
+            {
+              "en": "day",
+              "cn": "一天"
+            },
+            {
+              "en": "sports day",
+              "cn": "运动日"
+            },
+            {
+              "en": "their",
+              "cn": "他们的"
+            },
+            {
+              "en": "dog",
+              "cn": "狗"
+            },
+            {
+              "en": "win",
+              "cn": "获胜，赢"
+            },
+            {
+              "en": "best",
+              "cn": "最好的"
+            },
+            {
+              "en": "job",
+              "cn": "工作，任务"
+            },
+            {
+              "en": "good job",
+              "cn": "干得好，真不错"
+            },
+            {
+              "en": "all right",
+              "cn": "没有问题的，没事的"
+            },
+            {
+              "en": "well",
+              "cn": "令人满意地"
+            },
+            {
+              "en": "well done",
+              "cn": "干得好，真棒"
+            },
+            {
+              "en": "he",
+              "cn": "他"
+            },
+            {
+              "en": "she",
+              "cn": "她"
+            },
+            {
+              "en": "grandfather",
+              "cn": "祖父；外祖父"
+            },
+            {
+              "en": "mother",
+              "cn": "母亲"
+            },
+            {
+              "en": "grandmother",
+              "cn": "祖母；外祖母"
+            },
+            {
+              "en": "father",
+              "cn": "父亲"
+            },
+            {
+              "en": "who",
+              "cn": "谁"
+            },
+            {
+              "en": "cousin",
+              "cn": "堂（表）兄弟；堂（表）姐妹"
+            },
+            {
+              "en": "her",
+              "cn": "她的"
+            }
+          ]
+        },
+        {
+          "id": "plays",
+          "name": "Plays",
+          "words": [
+            {
+              "en": "magic",
+              "cn": "神奇的"
+            },
+            {
+              "en": "paintbrush",
+              "cn": "画笔"
+            },
+            {
+              "en": "like",
+              "cn": "喜欢"
+            },
+            {
+              "en": "man",
+              "cn": "人"
+            },
+            {
+              "en": "boy",
+              "cn": "男孩"
+            },
+            {
+              "en": "here",
+              "cn": "在这里"
+            },
+            {
+              "en": "here you are",
+              "cn": "给你"
+            },
+            {
+              "en": "fly",
+              "cn": "飞翔"
+            },
+            {
+              "en": "run",
+              "cn": "奔跑"
+            },
+            {
+              "en": "girl",
+              "cn": "女孩"
+            },
+            {
+              "en": "hungry",
+              "cn": "饥饿的"
+            },
+            {
+              "en": "noodle",
+              "cn": "面条"
+            },
+            {
+              "en": "cold",
+              "cn": "冷的，寒冷的"
+            },
+            {
+              "en": "coat",
+              "cn": "大衣，外套"
+            },
+            {
+              "en": "emperor",
+              "cn": "皇帝"
+            },
+            {
+              "en": "hear",
+              "cn": "得知"
+            },
+            {
+              "en": "want",
+              "cn": "想要"
+            },
+            {
+              "en": "money",
+              "cn": "钱"
+            },
+            {
+              "en": "tree",
+              "cn": "树木"
+            },
+            {
+              "en": "island",
+              "cn": "岛屿"
+            },
+            {
+              "en": "sea",
+              "cn": "海洋"
+            },
+            {
+              "en": "ship",
+              "cn": "大船"
+            },
+            {
+              "en": "wind",
+              "cn": "风"
+            },
+            {
+              "en": "more",
+              "cn": "更多的"
+            },
+            {
+              "en": "fall",
+              "cn": "跌落"
+            },
+            {
+              "en": "into",
+              "cn": "到……里面"
+            },
+            {
+              "en": "after",
+              "cn": "在……后"
+            },
+            {
+              "en": "use",
+              "cn": "用，使用"
+            },
+            {
+              "en": "his",
+              "cn": "他的"
+            },
+            {
+              "en": "give",
+              "cn": "递给"
+            },
+            {
+              "en": "pear",
+              "cn": "梨"
+            },
+            {
+              "en": "year",
+              "cn": "岁"
+            },
+            {
+              "en": "big",
+              "cn": "年长的"
+            },
+            {
+              "en": "welcome",
+              "cn": "欢迎"
+            },
+            {
+              "en": "juicy",
+              "cn": "多汁的"
+            },
+            {
+              "en": "sweet",
+              "cn": "甜的"
+            },
+            {
+              "en": "beautiful",
+              "cn": "极好的"
+            },
+            {
+              "en": "small",
+              "cn": "小的"
+            },
+            {
+              "en": "eat",
+              "cn": "吃"
+            },
+            {
+              "en": "very",
+              "cn": "很，非常"
+            },
+            {
+              "en": "kind",
+              "cn": "体贴的"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grade-3-2",
+      "name": "三年级下学期",
+      "units": [
+        {
+          "id": "unit_1",
+          "name": "Unit 1: All About Feelings",
+          "words": [
+            {
+              "en": "feeling",
+              "cn": "感觉"
+            },
+            {
+              "en": "tired",
+              "cn": "疲惫的"
+            },
+            {
+              "en": "sad",
+              "cn": "难过的"
+            },
+            {
+              "en": "angry",
+              "cn": "生气的"
+            },
+            {
+              "en": "scared",
+              "cn": "害怕的"
+            },
+            {
+              "en": "cry",
+              "cn": "哭"
+            },
+            {
+              "en": "laugh",
+              "cn": "笑"
+            },
+            {
+              "en": "stamp",
+              "cn": "跺（脚）"
+            },
+            {
+              "en": "sleep",
+              "cn": "睡觉"
+            },
+            {
+              "en": "new",
+              "cn": "新的"
+            },
+            {
+              "en": "game",
+              "cn": "游戏"
+            },
+            {
+              "en": "excited",
+              "cn": "兴奋的"
+            },
+            {
+              "en": "sorry",
+              "cn": "对不起"
+            },
+            {
+              "en": "like",
+              "cn": "喜欢"
+            },
+            {
+              "en": "but",
+              "cn": "但是"
+            },
+            {
+              "en": "unhappy",
+              "cn": "不开心的"
+            },
+            {
+              "en": "worried",
+              "cn": "担心的"
+            },
+            {
+              "en": "not",
+              "cn": "不，不是"
+            },
+            {
+              "en": "feel",
+              "cn": "感觉到，觉得"
+            },
+            {
+              "en": "find",
+              "cn": "找到"
+            },
+            {
+              "en": "doll",
+              "cn": "玩偶"
+            },
+            {
+              "en": "football",
+              "cn": "足球"
+            },
+            {
+              "en": "eat",
+              "cn": "吃"
+            },
+            {
+              "en": "his",
+              "cn": "他的"
+            },
+            {
+              "en": "cake",
+              "cn": "蛋糕"
+            },
+            {
+              "en": "big",
+              "cn": "大的"
+            },
+            {
+              "en": "mouse",
+              "cn": "老鼠"
+            }
+          ]
+        },
+        {
+          "id": "unit_2",
+          "name": "Unit 2: Know Your Body",
+          "words": [
+            {
+              "en": "know",
+              "cn": "了解"
+            },
+            {
+              "en": "body",
+              "cn": "身体；躯干"
+            },
+            {
+              "en": "rock",
+              "cn": "摇滚乐"
+            },
+            {
+              "en": "song",
+              "cn": "歌曲"
+            },
+            {
+              "en": "touch",
+              "cn": "触摸"
+            },
+            {
+              "en": "head",
+              "cn": "头"
+            },
+            {
+              "en": "eye",
+              "cn": "眼睛"
+            },
+            {
+              "en": "hair",
+              "cn": "头发"
+            },
+            {
+              "en": "ear",
+              "cn": "耳朵"
+            },
+            {
+              "en": "wave",
+              "cn": "摆动"
+            },
+            {
+              "en": "leg",
+              "cn": "腿"
+            },
+            {
+              "en": "foot",
+              "cn": "脚"
+            },
+            {
+              "en": "nose",
+              "cn": "鼻子"
+            },
+            {
+              "en": "face",
+              "cn": "脸"
+            },
+            {
+              "en": "arm",
+              "cn": "手臂"
+            },
+            {
+              "en": "hand",
+              "cn": "手"
+            },
+            {
+              "en": "mouth",
+              "cn": "嘴"
+            },
+            {
+              "en": "tooth",
+              "cn": "牙"
+            },
+            {
+              "en": "prize",
+              "cn": "奖品"
+            },
+            {
+              "en": "bike",
+              "cn": "自行车"
+            },
+            {
+              "en": "race",
+              "cn": "竞赛"
+            },
+            {
+              "en": "stretch",
+              "cn": "伸展"
+            },
+            {
+              "en": "shake",
+              "cn": "摇动"
+            },
+            {
+              "en": "here",
+              "cn": "在这里"
+            },
+            {
+              "en": "Mr",
+              "cn": "先生"
+            },
+            {
+              "en": "back",
+              "cn": "回到原处"
+            },
+            {
+              "en": "worry",
+              "cn": "担心"
+            },
+            {
+              "en": "short",
+              "cn": "短的"
+            },
+            {
+              "en": "small",
+              "cn": "小的"
+            },
+            {
+              "en": "robot",
+              "cn": "机器人"
+            }
+          ]
+        },
+        {
+          "id": "unit_3",
+          "name": "Unit 3: Looking Good",
+          "words": [
+            {
+              "en": "so",
+              "cn": "这么，如此"
+            },
+            {
+              "en": "cool",
+              "cn": "酷的"
+            },
+            {
+              "en": "clothes",
+              "cn": "衣服"
+            },
+            {
+              "en": "wear",
+              "cn": "穿"
+            },
+            {
+              "en": "cap",
+              "cn": "（有帽舌的）帽子"
+            },
+            {
+              "en": "T-shirt",
+              "cn": "T恤"
+            },
+            {
+              "en": "trousers",
+              "cn": "裤子"
+            },
+            {
+              "en": "sock",
+              "cn": "袜子"
+            },
+            {
+              "en": "shiny",
+              "cn": "有光泽的"
+            },
+            {
+              "en": "shoe",
+              "cn": "鞋"
+            },
+            {
+              "en": "dress",
+              "cn": "连衣裙"
+            },
+            {
+              "en": "sweater",
+              "cn": "毛线衣"
+            },
+            {
+              "en": "skirt",
+              "cn": "半身裙"
+            },
+            {
+              "en": "shirt",
+              "cn": "衬衫"
+            },
+            {
+              "en": "coat",
+              "cn": "外套"
+            },
+            {
+              "en": "shorts",
+              "cn": "短裤"
+            },
+            {
+              "en": "king",
+              "cn": "国王"
+            },
+            {
+              "en": "want",
+              "cn": "想要"
+            },
+            {
+              "en": "beautiful",
+              "cn": "美丽的"
+            },
+            {
+              "en": "make",
+              "cn": "做"
+            },
+            {
+              "en": "magic",
+              "cn": "神奇的"
+            },
+            {
+              "en": "people",
+              "cn": "人"
+            },
+            {
+              "en": "them",
+              "cn": "它们"
+            },
+            {
+              "en": "after",
+              "cn": "在……后"
+            },
+            {
+              "en": "month",
+              "cn": "一个月；月"
+            },
+            {
+              "en": "try",
+              "cn": "试"
+            },
+            {
+              "en": "try sth on",
+              "cn": "试穿"
+            },
+            {
+              "en": "why",
+              "cn": "为什么"
+            },
+            {
+              "en": "wonderful",
+              "cn": "令人惊叹的"
+            },
+            {
+              "en": "most",
+              "cn": "最"
+            },
+            {
+              "en": "any",
+              "cn": "任何的"
+            },
+            {
+              "en": "or",
+              "cn": "或"
+            },
+            {
+              "en": "fox",
+              "cn": "狐狸"
+            },
+            {
+              "en": "monkey",
+              "cn": "猴子"
+            },
+            {
+              "en": "tell",
+              "cn": "告诉；说出"
+            },
+            {
+              "en": "truth",
+              "cn": "真相"
+            },
+            {
+              "en": "wash",
+              "cn": "洗"
+            },
+            {
+              "en": "hang",
+              "cn": "悬挂"
+            },
+            {
+              "en": "hat",
+              "cn": "帽子"
+            },
+            {
+              "en": "jeans",
+              "cn": "牛仔裤"
+            },
+            {
+              "en": "boot",
+              "cn": "靴子"
+            },
+            {
+              "en": "robe",
+              "cn": "长袍"
+            }
+          ]
+        },
+        {
+          "id": "unit_4",
+          "name": "Unit 4: Rain or sun, it's fun",
+          "words": [
+            {
+              "en": "rain",
+              "cn": "雨"
+            },
+            {
+              "en": "sun",
+              "cn": "阳光"
+            },
+            {
+              "en": "rainy",
+              "cn": "多雨的"
+            },
+            {
+              "en": "run",
+              "cn": "跑"
+            },
+            {
+              "en": "windy",
+              "cn": "多风的"
+            },
+            {
+              "en": "fly",
+              "cn": "放飞"
+            },
+            {
+              "en": "kite",
+              "cn": "风筝"
+            },
+            {
+              "en": "park",
+              "cn": "公园"
+            },
+            {
+              "en": "hot",
+              "cn": "炎热的"
+            },
+            {
+              "en": "sunny",
+              "cn": "阳光充足的"
+            },
+            {
+              "en": "swim",
+              "cn": "游泳"
+            },
+            {
+              "en": "water",
+              "cn": "水"
+            },
+            {
+              "en": "cold",
+              "cn": "寒冷的"
+            },
+            {
+              "en": "snowy",
+              "cn": "多雪的"
+            },
+            {
+              "en": "throw",
+              "cn": "投，扔"
+            },
+            {
+              "en": "snowball",
+              "cn": "雪球"
+            },
+            {
+              "en": "umbrella",
+              "cn": "雨伞"
+            },
+            {
+              "en": "warm",
+              "cn": "保暖的"
+            },
+            {
+              "en": "music",
+              "cn": "音乐"
+            },
+            {
+              "en": "weather",
+              "cn": "天气"
+            },
+            {
+              "en": "bookshop",
+              "cn": "书店"
+            },
+            {
+              "en": "wait",
+              "cn": "等"
+            },
+            {
+              "en": "wet",
+              "cn": "湿的"
+            },
+            {
+              "en": "again",
+              "cn": "又"
+            },
+            {
+              "en": "dry",
+              "cn": "干燥的"
+            },
+            {
+              "en": "sell",
+              "cn": "卖"
+            },
+            {
+              "en": "these",
+              "cn": "this的复数形式"
+            },
+            {
+              "en": "idea",
+              "cn": "主意"
+            },
+            {
+              "en": "club",
+              "cn": "俱乐部"
+            },
+            {
+              "en": "welcome",
+              "cn": "欢迎"
+            },
+            {
+              "en": "stand",
+              "cn": "站立"
+            },
+            {
+              "en": "board",
+              "cn": "公告牌"
+            },
+            {
+              "en": "walk",
+              "cn": "走"
+            },
+            {
+              "en": "carefully",
+              "cn": "小心地"
+            },
+            {
+              "en": "tree",
+              "cn": "树"
+            },
+            {
+              "en": "spring",
+              "cn": "春天"
+            },
+            {
+              "en": "summer",
+              "cn": "夏天"
+            },
+            {
+              "en": "autumn",
+              "cn": "秋天"
+            },
+            {
+              "en": "winter",
+              "cn": "冬天"
+            },
+            {
+              "en": "season",
+              "cn": "季节"
+            },
+            {
+              "en": "drawing",
+              "cn": "图画"
+            },
+            {
+              "en": "cloudy",
+              "cn": "多云的"
+            }
+          ]
+        },
+        {
+          "id": "unit_5",
+          "name": "Unit 5: Days of the Week",
+          "words": [
+            {
+              "en": "week",
+              "cn": "星期"
+            },
+            {
+              "en": "Monday",
+              "cn": "星期一"
+            },
+            {
+              "en": "Tuesday",
+              "cn": "星期二"
+            },
+            {
+              "en": "Wednesday",
+              "cn": "星期三"
+            },
+            {
+              "en": "Thursday",
+              "cn": "星期四"
+            },
+            {
+              "en": "Friday",
+              "cn": "星期五"
+            },
+            {
+              "en": "Saturday",
+              "cn": "星期六"
+            },
+            {
+              "en": "Sunday",
+              "cn": "星期日"
+            },
+            {
+              "en": "before",
+              "cn": "在……以前"
+            },
+            {
+              "en": "room",
+              "cn": "房间"
+            },
+            {
+              "en": "close",
+              "cn": "关，闭合"
+            },
+            {
+              "en": "much",
+              "cn": "非常"
+            },
+            {
+              "en": "of course",
+              "cn": "当然"
+            },
+            {
+              "en": "rabbit",
+              "cn": "兔"
+            },
+            {
+              "en": "cat",
+              "cn": "猫"
+            },
+            {
+              "en": "fish",
+              "cn": "鱼"
+            },
+            {
+              "en": "busy",
+              "cn": "忙碌的"
+            },
+            {
+              "en": "every",
+              "cn": "每一个"
+            },
+            {
+              "en": "cooking",
+              "cn": "做饭"
+            },
+            {
+              "en": "cook",
+              "cn": "烹调"
+            },
+            {
+              "en": "Chinese",
+              "cn": "中国的"
+            },
+            {
+              "en": "chess",
+              "cn": "国际象棋"
+            },
+            {
+              "en": "Chinese chess",
+              "cn": "中国象棋"
+            },
+            {
+              "en": "study",
+              "cn": "学习"
+            },
+            {
+              "en": "basketball",
+              "cn": "篮球"
+            },
+            {
+              "en": "activity",
+              "cn": "活动"
+            }
+          ]
+        },
+        {
+          "id": "unit_6",
+          "name": "Unit 6: Time to Eat",
+          "words": [
+            {
+              "en": "apple",
+              "cn": "苹果"
+            },
+            {
+              "en": "egg",
+              "cn": "鸡蛋"
+            },
+            {
+              "en": "bread",
+              "cn": "面包"
+            },
+            {
+              "en": "milk",
+              "cn": "奶"
+            },
+            {
+              "en": "rice",
+              "cn": "米；米饭"
+            },
+            {
+              "en": "tomato",
+              "cn": "西红柿"
+            },
+            {
+              "en": "juice",
+              "cn": "果汁"
+            },
+            {
+              "en": "candy",
+              "cn": "糖果"
+            },
+            {
+              "en": "ice",
+              "cn": "冰"
+            },
+            {
+              "en": "cream",
+              "cn": "奶油"
+            },
+            {
+              "en": "ice cream",
+              "cn": "冰激凌"
+            },
+            {
+              "en": "chicken",
+              "cn": "鸡肉"
+            },
+            {
+              "en": "noodles",
+              "cn": "（一般用复数）面条"
+            },
+            {
+              "en": "banana",
+              "cn": "香蕉"
+            },
+            {
+              "en": "dinner",
+              "cn": "正餐"
+            },
+            {
+              "en": "parent",
+              "cn": "父，母"
+            },
+            {
+              "en": "dish",
+              "cn": "一道菜"
+            },
+            {
+              "en": "meat",
+              "cn": "肉"
+            },
+            {
+              "en": "mushroom",
+              "cn": "蘑菇"
+            },
+            {
+              "en": "potato",
+              "cn": "土豆"
+            },
+            {
+              "en": "eggplant",
+              "cn": "茄子"
+            },
+            {
+              "en": "food",
+              "cn": "食物"
+            },
+            {
+              "en": "amazing",
+              "cn": "惊人的"
+            },
+            {
+              "en": "say",
+              "cn": "说"
+            },
+            {
+              "en": "grape",
+              "cn": "葡萄"
+            },
+            {
+              "en": "vegetable",
+              "cn": "蔬菜"
+            },
+            {
+              "en": "soup",
+              "cn": "汤"
+            },
+            {
+              "en": "drink",
+              "cn": "饮料"
+            },
+            {
+              "en": "need",
+              "cn": "需要"
+            },
+            {
+              "en": "oil",
+              "cn": "植物油，动物油"
+            },
+            {
+              "en": "salt",
+              "cn": "盐"
+            },
+            {
+              "en": "beat",
+              "cn": "搅拌，搅打"
+            }
+          ]
+        },
+        {
+          "id": "unit_7",
+          "name": "Unit 7: Plays",
+          "words": [
+            {
+              "en": "dragon",
+              "cn": "龙"
+            },
+            {
+              "en": "point",
+              "cn": "指"
+            },
+            {
+              "en": "house",
+              "cn": "房子"
+            },
+            {
+              "en": "there is",
+              "cn": "有"
+            },
+            {
+              "en": "lot",
+              "cn": "许多"
+            },
+            {
+              "en": "cup",
+              "cn": "杯子"
+            },
+            {
+              "en": "real",
+              "cn": "真的"
+            },
+            {
+              "en": "picnic",
+              "cn": "野餐"
+            },
+            {
+              "en": "sit",
+              "cn": "坐"
+            },
+            {
+              "en": "yummy",
+              "cn": "很好吃的"
+            },
+            {
+              "en": "bottle",
+              "cn": "瓶子"
+            },
+            {
+              "en": "box",
+              "cn": "盒"
+            },
+            {
+              "en": "peel",
+              "cn": "外皮"
+            },
+            {
+              "en": "pick up",
+              "cn": "捡起"
+            },
+            {
+              "en": "sure",
+              "cn": "当然"
+            },
+            {
+              "en": "minute",
+              "cn": "分，分钟"
+            },
+            {
+              "en": "sky",
+              "cn": "天"
+            },
+            {
+              "en": "grass",
+              "cn": "草"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grade-4-1",
+      "name": "四年级上学期",
+      "units": [
+        {
+          "id": "unit_1",
+          "name": "Unit 1",
+          "words": [
+            {
+              "en": "star",
+              "cn": "明星，名角"
+            },
+            {
+              "en": "ping-pong",
+              "cn": "乒乓球运动"
+            },
+            {
+              "en": "kick",
+              "cn": "踢"
+            },
+            {
+              "en": "band",
+              "cn": "圈，箍，带"
+            },
+            {
+              "en": "very",
+              "cn": "很，非常"
+            },
+            {
+              "en": "fast",
+              "cn": "快地，快速地"
+            },
+            {
+              "en": "sure",
+              "cn": "肯定的，确信的，有把握的"
+            },
+            {
+              "en": "hurt",
+              "cn": "（身体部位）感到疼痛"
+            },
+            {
+              "en": "really",
+              "cn": "真的"
+            },
+            {
+              "en": "wind",
+              "cn": "风"
+            },
+            {
+              "en": "ride",
+              "cn": "骑，骑自行车"
+            },
+            {
+              "en": "report",
+              "cn": "报告，汇报"
+            },
+            {
+              "en": "wheelchair",
+              "cn": "轮椅"
+            },
+            {
+              "en": "far",
+              "cn": "远"
+            },
+            {
+              "en": "from",
+              "cn": "来自"
+            }
+          ]
+        },
+        {
+          "id": "unit_2",
+          "name": "Unit 2",
+          "words": [
+            {
+              "en": "town",
+              "cn": "镇，城镇，市镇"
+            },
+            {
+              "en": "train",
+              "cn": "火车，列车"
+            },
+            {
+              "en": "station",
+              "cn": "车站；所；局"
+            },
+            {
+              "en": "train station",
+              "cn": "火车站"
+            },
+            {
+              "en": "supermarket",
+              "cn": "超级市场，超市"
+            },
+            {
+              "en": "cinema",
+              "cn": "电影院"
+            },
+            {
+              "en": "bus",
+              "cn": "公交车，公共汽车"
+            },
+            {
+              "en": "stop",
+              "cn": "车站"
+            },
+            {
+              "en": "bus stop",
+              "cn": "公交车站，公共汽车站"
+            },
+            {
+              "en": "hospital",
+              "cn": "医院"
+            },
+            {
+              "en": "police",
+              "cn": "警察"
+            },
+            {
+              "en": "police station",
+              "cn": "警察（分）局，派出所"
+            },
+            {
+              "en": "shop",
+              "cn": "商店"
+            },
+            {
+              "en": "first",
+              "cn": "先，首先"
+            },
+            {
+              "en": "left",
+              "cn": "向左，朝左"
+            },
+            {
+              "en": "then",
+              "cn": "接下来，然后"
+            },
+            {
+              "en": "straight",
+              "cn": "笔直地，成直线地"
+            },
+            {
+              "en": "turn",
+              "cn": "转弯；（使）改变方向"
+            },
+            {
+              "en": "there",
+              "cn": "在那里"
+            },
+            {
+              "en": "surprise",
+              "cn": "意想不到的事；不同寻常的事"
+            },
+            {
+              "en": "restaurant",
+              "cn": "饭店，餐馆"
+            },
+            {
+              "en": "excuse me",
+              "cn": "劳驾"
+            },
+            {
+              "en": "way",
+              "cn": "路，道路"
+            },
+            {
+              "en": "us",
+              "cn": "我们"
+            },
+            {
+              "en": "thanks",
+              "cn": "谢谢你，多谢"
+            },
+            {
+              "en": "buy",
+              "cn": "买，购买"
+            },
+            {
+              "en": "our",
+              "cn": "我们的"
+            },
+            {
+              "en": "writer",
+              "cn": "作家；作者"
+            },
+            {
+              "en": "often",
+              "cn": "经常，时常"
+            },
+            {
+              "en": "between",
+              "cn": "在……之间"
+            },
+            {
+              "en": "street",
+              "cn": "大街，街道"
+            },
+            {
+              "en": "live",
+              "cn": "住，居住"
+            },
+            {
+              "en": "place",
+              "cn": "地方，地点，场所"
+            },
+            {
+              "en": "near",
+              "cn": "接近（地），靠近（地）"
+            },
+            {
+              "en": "map",
+              "cn": "地图"
+            }
+          ]
+        },
+        {
+          "id": "unit_3",
+          "name": "Unit 3",
+          "words": [
+            {
+              "en": "everyone",
+              "cn": "每个人，人人"
+            },
+            {
+              "en": "work",
+              "cn": "工作，干活"
+            },
+            {
+              "en": "hard",
+              "cn": "费劲地；费力地"
+            },
+            {
+              "en": "teacher",
+              "cn": "教师"
+            },
+            {
+              "en": "driver",
+              "cn": "司机，驾驶员"
+            },
+            {
+              "en": "firefighter",
+              "cn": "消防队员"
+            },
+            {
+              "en": "policeman",
+              "cn": "男警察"
+            },
+            {
+              "en": "worker",
+              "cn": "工作人员"
+            },
+            {
+              "en": "doctor",
+              "cn": "医生，大夫"
+            },
+            {
+              "en": "nurse",
+              "cn": "护士"
+            },
+            {
+              "en": "teach",
+              "cn": "教授，讲授"
+            },
+            {
+              "en": "sick",
+              "cn": "生病的，患病的"
+            },
+            {
+              "en": "gardener",
+              "cn": "园丁，花匠"
+            },
+            {
+              "en": "garden",
+              "cn": "花园，园子"
+            },
+            {
+              "en": "tall",
+              "cn": "高的，高大的"
+            },
+            {
+              "en": "cleaner",
+              "cn": "清洁工人"
+            },
+            {
+              "en": "fire",
+              "cn": "火；失火，火灾"
+            },
+            {
+              "en": "animal",
+              "cn": "动物"
+            },
+            {
+              "en": "grow",
+              "cn": "种植"
+            },
+            {
+              "en": "taxi",
+              "cn": "出租车"
+            },
+            {
+              "en": "drive",
+              "cn": "驾车送（人）"
+            },
+            {
+              "en": "around",
+              "cn": "到处，四处"
+            },
+            {
+              "en": "farmer",
+              "cn": "农民"
+            },
+            {
+              "en": "science",
+              "cn": "科学"
+            },
+            {
+              "en": "ask",
+              "cn": "问，提问"
+            },
+            {
+              "en": "question",
+              "cn": "问题；疑问"
+            },
+            {
+              "en": "scientist",
+              "cn": "科学家"
+            },
+            {
+              "en": "because",
+              "cn": "因为"
+            },
+            {
+              "en": "panda",
+              "cn": "大熊猫"
+            },
+            {
+              "en": "keeper",
+              "cn": "饲养员"
+            },
+            {
+              "en": "house",
+              "cn": "房屋，房子"
+            },
+            {
+              "en": "dream job",
+              "cn": "梦想中的工作"
+            }
+          ]
+        },
+        {
+          "id": "unit_4",
+          "name": "Unit 4",
+          "words": [
+            {
+              "en": "zookeeper",
+              "cn": "动物园饲养员"
+            },
+            {
+              "en": "bee",
+              "cn": "蜜蜂"
+            },
+            {
+              "en": "early",
+              "cn": "在早期，在初期"
+            },
+            {
+              "en": "go shopping",
+              "cn": "逛街，购物"
+            },
+            {
+              "en": "fifty",
+              "cn": "五十"
+            },
+            {
+              "en": "yuan",
+              "cn": "元"
+            },
+            {
+              "en": "thirty-three",
+              "cn": "三十三"
+            },
+            {
+              "en": "forty-four",
+              "cn": "四十四"
+            },
+            {
+              "en": "carrot",
+              "cn": "胡萝卜"
+            },
+            {
+              "en": "thirteen",
+              "cn": "十三"
+            },
+            {
+              "en": "seventy",
+              "cn": "七十"
+            },
+            {
+              "en": "eleven",
+              "cn": "十一"
+            },
+            {
+              "en": "thirty",
+              "cn": "三十"
+            },
+            {
+              "en": "eighteen",
+              "cn": "十八"
+            },
+            {
+              "en": "eighty",
+              "cn": "八十"
+            },
+            {
+              "en": "nineteen",
+              "cn": "十九"
+            },
+            {
+              "en": "sixteen",
+              "cn": "十六"
+            },
+            {
+              "en": "sixty-six",
+              "cn": "六十六"
+            },
+            {
+              "en": "twenty",
+              "cn": "二十"
+            },
+            {
+              "en": "twelve",
+              "cn": "十二"
+            },
+            {
+              "en": "hundred",
+              "cn": "一百"
+            },
+            {
+              "en": "forty-three",
+              "cn": "四十三"
+            },
+            {
+              "en": "market",
+              "cn": "集市；市场"
+            },
+            {
+              "en": "flea market",
+              "cn": "跳蚤市场"
+            },
+            {
+              "en": "skateboard",
+              "cn": "滑板"
+            },
+            {
+              "en": "noon",
+              "cn": "正午，中午"
+            },
+            {
+              "en": "money",
+              "cn": "钱"
+            },
+            {
+              "en": "by the way",
+              "cn": "顺便说一下"
+            },
+            {
+              "en": "skateboarding",
+              "cn": "滑板运动"
+            },
+            {
+              "en": "friend",
+              "cn": "朋友，友人"
+            },
+            {
+              "en": "flower",
+              "cn": "花，花朵"
+            },
+            {
+              "en": "toy",
+              "cn": "玩具"
+            },
+            {
+              "en": "pair",
+              "cn": "一双，一对；一条"
+            },
+            {
+              "en": "give",
+              "cn": "赠送，给予"
+            },
+            {
+              "en": "spend",
+              "cn": "花销，花费"
+            },
+            {
+              "en": "box",
+              "cn": "盒；匣；箱"
+            },
+            {
+              "en": "use",
+              "cn": "使用"
+            },
+            {
+              "en": "save",
+              "cn": "储蓄，存（钱）"
+            },
+            {
+              "en": "holiday",
+              "cn": "假期，休假日"
+            },
+            {
+              "en": "share",
+              "cn": "共享"
+            },
+            {
+              "en": "should",
+              "cn": "应当，应该"
+            }
+          ]
+        },
+        {
+          "id": "unit_5",
+          "name": "Unit 5",
+          "words": [
+            {
+              "en": "shape",
+              "cn": "形，形状"
+            },
+            {
+              "en": "chocolate",
+              "cn": "巧克力糖；巧克力"
+            },
+            {
+              "en": "triangle",
+              "cn": "三角形；三角形物体"
+            },
+            {
+              "en": "circle",
+              "cn": "圆（形）"
+            },
+            {
+              "en": "rectangle",
+              "cn": "长方形，矩形"
+            },
+            {
+              "en": "square",
+              "cn": "正方形，四方形"
+            },
+            {
+              "en": "into",
+              "cn": "进入，到……里面"
+            },
+            {
+              "en": "tummy",
+              "cn": "肚子"
+            },
+            {
+              "en": "yummy",
+              "cn": "美味的"
+            },
+            {
+              "en": "wheel",
+              "cn": "车轮"
+            },
+            {
+              "en": "another",
+              "cn": "另一，又一"
+            },
+            {
+              "en": "a lot",
+              "cn": "大量，许多"
+            },
+            {
+              "en": "its",
+              "cn": "它的"
+            },
+            {
+              "en": "line",
+              "cn": "线，线条"
+            }
+          ]
+        },
+        {
+          "id": "unit_6",
+          "name": "Unit 6",
+          "words": [
+            {
+              "en": "zoo",
+              "cn": "动物园"
+            },
+            {
+              "en": "sky",
+              "cn": "天，天空"
+            },
+            {
+              "en": "neck",
+              "cn": "颈，脖子"
+            },
+            {
+              "en": "strong",
+              "cn": "强健的，健壮的，力气大的"
+            },
+            {
+              "en": "brave",
+              "cn": "勇敢的，无畏的"
+            },
+            {
+              "en": "heavy",
+              "cn": "重的"
+            },
+            {
+              "en": "giraffe",
+              "cn": "长颈鹿"
+            },
+            {
+              "en": "lion",
+              "cn": "狮子"
+            },
+            {
+              "en": "elephant",
+              "cn": "象"
+            },
+            {
+              "en": "pig",
+              "cn": "猪"
+            },
+            {
+              "en": "horse",
+              "cn": "马"
+            },
+            {
+              "en": "sheep",
+              "cn": "羊，绵羊"
+            },
+            {
+              "en": "cow",
+              "cn": "牛；奶牛"
+            },
+            {
+              "en": "climb",
+              "cn": "攀登，爬"
+            },
+            {
+              "en": "slow",
+              "cn": "慢的，缓慢的"
+            },
+            {
+              "en": "perfect",
+              "cn": "完美的"
+            },
+            {
+              "en": "pet",
+              "cn": "宠物"
+            },
+            {
+              "en": "boy",
+              "cn": "男孩，少年"
+            },
+            {
+              "en": "girl",
+              "cn": "女孩，小姑娘"
+            },
+            {
+              "en": "hamster",
+              "cn": "仓鼠"
+            },
+            {
+              "en": "cute",
+              "cn": "漂亮的，逗人喜爱的"
+            },
+            {
+              "en": "parrot",
+              "cn": "鹦鹉"
+            },
+            {
+              "en": "talk",
+              "cn": "说话"
+            },
+            {
+              "en": "shelter",
+              "cn": "庇护所；避难所"
+            },
+            {
+              "en": "animal shelter",
+              "cn": "动物收容所"
+            },
+            {
+              "en": "hurt",
+              "cn": "受伤的"
+            },
+            {
+              "en": "catch",
+              "cn": "接住；接（球等）"
+            },
+            {
+              "en": "grass",
+              "cn": "草，青草"
+            },
+            {
+              "en": "farm",
+              "cn": "农场；养殖场"
+            },
+            {
+              "en": "tail",
+              "cn": "尾巴"
+            }
+          ]
+        },
+        {
+          "id": "unit_7",
+          "name": "Plays",
+          "words": [
+            {
+              "en": "city",
+              "cn": "城市，都市"
+            },
+            {
+              "en": "party",
+              "cn": "聚会，宴会"
+            },
+            {
+              "en": "gift",
+              "cn": "礼物"
+            },
+            {
+              "en": "address",
+              "cn": "地址"
+            },
+            {
+              "en": "snow",
+              "cn": "雪"
+            },
+            {
+              "en": "knock",
+              "cn": "敲门（窗）"
+            },
+            {
+              "en": "wolf",
+              "cn": "狼"
+            },
+            {
+              "en": "paw",
+              "cn": "（动物的）爪子"
+            },
+            {
+              "en": "hunter",
+              "cn": "猎人"
+            },
+            {
+              "en": "bag",
+              "cn": "袋；包；囊"
+            },
+            {
+              "en": "life",
+              "cn": "生命"
+            },
+            {
+              "en": "story",
+              "cn": "故事"
+            },
+            {
+              "en": "tie",
+              "cn": "把……系起来"
+            },
+            {
+              "en": "never",
+              "cn": "决不，永不"
+            },
+            {
+              "en": "trust",
+              "cn": "信任，信赖，相信"
+            },
+            {
+              "en": "bad",
+              "cn": "（道德品质）坏的，不好的"
+            },
+            {
+              "en": "guy",
+              "cn": "家伙"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grade-4-2",
+      "name": "四年级下学期",
+      "units": []
+    },
+    {
+      "id": "grade-5-1",
+      "name": "五年级上学期",
+      "units": []
+    },
+    {
+      "id": "grade-5-2",
+      "name": "五年级下学期",
+      "units": []
+    },
+    {
+      "id": "grade-6-1",
+      "name": "六年级上学期",
+      "units": []
+    },
+    {
+      "id": "grade-6-2",
+      "name": "六年级下学期",
+      "units": []
+    }
+  ]
+}
