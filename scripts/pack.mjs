@@ -9,6 +9,7 @@ import { bumpPackVersion } from './bump-pack-version.mjs';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const windows = process.platform === 'win32';
 const env = { ...process.env };
+env.BUILD_TARGET = 'android';
 // Isolate this project's downloads/settings from stale global Gradle proxies.
 // An explicit GRADLE_USER_HOME still lets callers choose their own configuration.
 env.GRADLE_USER_HOME ||= join(root, '.gradle-user-home');

@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [
     vue(),
     VitePWA({
+      // Native APKs already bundle offline assets; retire any previously installed SW.
+      selfDestroying: process.env.BUILD_TARGET === 'android',
+      injectRegister: process.env.BUILD_TARGET === 'android' ? false : 'auto',
       registerType: 'autoUpdate',
       includeAssets: ['icon-192x192.png', 'icon-512x512.png'],
       manifest: {
