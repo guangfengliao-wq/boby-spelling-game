@@ -11,7 +11,7 @@ const draft = { id: 1, draft: true, tag_name: 'v1.2.3', upload_url: 'https://upl
 
 test('creates draft, uploads verified APK, then publishes', async () => {
   const calls = [];
-  const results = [null, [], draft, [], asset, { ...draft, draft: false }];
+  const results = [null, [], draft, [], { ...asset, browser_download_url: 'https://github.com/owner/repo/releases/download/untagged-temporary/file.apk' }, { ...draft, draft: false }];
   const api = async (url, options = {}) => { calls.push({ url, ...options }); return results.shift(); };
   const result = await publishRelease({ ...input, api });
   assert.equal(result.download, asset.browser_download_url);

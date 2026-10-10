@@ -69,7 +69,9 @@ export async function publishRelease({ api, repository, version, commit, filenam
   if (release.draft) {
     release = await api(`${base}/releases/${release.id}`, { method: 'PATCH', json: { draft: false } });
   }
-  return { release: release.html_url, download: asset.browser_download_url };
+  // Upload responses for drafts contain an untagged-* URL that changes on publication.
+  const download = `https://github.com/${repository}/releases/download/${encodeURIComponent(tag)}/${encodeURIComponent(filename)}`;
+  return { release: release.html_url, download };
 }
 
 async function main() {
