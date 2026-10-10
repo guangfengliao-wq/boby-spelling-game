@@ -42,6 +42,8 @@ npm run dev
 | `npm run preview` | 本地预览已生成的网页构建产物，需先执行 build |
 | `npm run pack` | 递增版本号、构建网页并生成 Android 调试 APK，启动二维码分享 |
 | `npm run share` | 启动或复用已有 APK 的局域网下载服务，重新生成二维码 |
+| `npm run release` | 上传当前版本 APK 到 GitHub Releases，并生成远程下载二维码 |
+| `npm run release -- --dry-run` | 仅检查本地待发布文件，不联网、不上传 |
 
 预览生产构建：
 
@@ -75,6 +77,20 @@ release/
 **版本号行为**：每次运行 `npm run pack` 都会先递增补丁版本和 Android `versionCode`，即使后续构建失败也会保留递增。单独执行 `build` 或 `share` 不递增版本。
 
 输出为调试 APK；正式发布需要另行配置发布签名。覆盖安装应保持签名一致，以便保留学习记录。完整环境配置、签名说明及故障排查见 [APK 打包指南](APK_BUILD_GUIDE.md)。
+
+## 发布 APK 到 GitHub
+
+`pack`、`build`、`share` 均不会上传 APK。需要发布时，先运行 `npm run pack`，将版本号及代码修改提交并 `git push`，然后执行：
+
+```bash
+npm run release
+```
+
+命令读取 `package.json` 的版本和 `origin` 仓库，上传对应的 `release/english-spelling-v<版本号>.apk`，创建 `v<版本号>` Release；不会重新打包或递增版本。需先通过 Git 凭据管理器登录有仓库写入权限的 GitHub 账号，也可使用 `GH_TOKEN` 或 `GITHUB_TOKEN` 环境变量。不要把令牌写入代码或提交到 Git。
+
+上传校验成功后才发布新建的草稿。重复执行时相同附件会复用，内容不同的同名附件不会被覆盖。发布成功后在终端显示远程二维码，并生成 `release/github-install-v<版本号>.png` 和 `.html`，与局域网二维码分开保存。
+
+远程二维码指向 GitHub 上带版本号的 APK 下载链接，无需电脑开机或同一 Wi-Fi；扫码设备需能访问 GitHub，私有仓库还需要登录权限。此链接固定对应本次版本。二维码生成失败时可重跑命令，已上传的相同 APK 不会重复上传。
 
 ## 技术栈与目录
 
@@ -122,9 +138,10 @@ npm run build
 node scripts/test-word-audio.mjs
 node scripts/test-dictation-scope.mjs
 node --test scripts/bump-pack-version.test.mjs
+node --test scripts/release.test.mjs
 ```
 
-这些脚本分别检查音频播放器生命周期、默写范围设置和打包版本递增。界面修改还应通过 `npm run dev` 检查实际交互；Android 相关修改需在设备上验证。
+这些脚本分别检查音频播放器生命周期、默写范围设置、打包版本递增，以及发布流程与远程二维码。发布测试使用模拟接口，不会上传文件。界面修改还应通过 `npm run dev` 检查实际交互；Android 相关修改需在设备上验证。
 
 ## 音频来源与授权
 

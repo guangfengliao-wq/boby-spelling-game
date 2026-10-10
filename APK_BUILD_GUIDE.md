@@ -60,6 +60,14 @@ adb install -r release/english-spelling.apk
 
 以后使用同一台电脑、同一调试签名生成的 APK 可以覆盖安装，通常会保留应用数据。保留本机 `~/.android/debug.keystore`；换电脑打包时应继续使用同一密钥，以免签名不同导致无法覆盖安装。不要为了更新随意卸载旧应用，卸载会清除应用本地数据。
 
+## 发布到 GitHub Releases
+
+本地打包与局域网分享不会上传 APK。需要远程发布时，先 `npm run pack`，提交并推送版本及代码修改，再运行 `npm run release`。
+
+发布命令上传当前版本的 `release/english-spelling-v<版本号>.apk`，不打包、不递增版本。成功后生成指向 GitHub APK 下载地址的 `release/github-install-v<版本号>.png`、`.html`，并在终端显示二维码。扫码设备需联网访问 GitHub，无需与电脑处于同一局域网。
+
+运行 `npm run release -- --dry-run` 可仅检查本地文件。登录与重复发布说明见 [README](README.md#发布-apk-到-github)。
+
 ## 常见问题
 
 - **提示找不到 JDK / SDK**：按上面的首次准备配置环境；JDK 17 不能编译本项目所需的 Java 21 源码。
