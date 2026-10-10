@@ -11,10 +11,12 @@ npm run pack
 命令依次构建网页、同步 Capacitor Android 资源、执行 Gradle `assembleDebug`，成功后输出：
 
 ```text
-release/english-spelling.apk
+release/english-spelling-v<版本号>.apk
 ```
 
-这是自动使用本机调试密钥签名的 APK，可直接安装到家庭安卓平板，无需连接开发服务器。每次修改应用后重新运行同一命令即可；只有所有步骤成功后才会更新上述文件。失败时请查看终端错误，旧 APK 不代表本次构建结果。
+例如版本 `0.1.1` 会生成 `release/english-spelling-v0.1.1.apk`，方便上传到 GitHub Releases 和区分历史安装包。同时保留 `release/english-spelling.apk` 作为最新成功构建的副本，兼容已有局域网下载链接和安装命令。
+
+这是自动使用本机调试密钥签名的 APK，可直接安装到家庭安卓平板，无需连接开发服务器。每次修改应用后重新运行同一命令即可；只有网页构建与 Gradle 打包成功后才会更新 APK。失败时请查看终端错误，旧 APK 不代表本次构建结果。
 
 ## 首次准备
 

@@ -64,7 +64,8 @@ npm run pack
 
 ```text
 release/
-├── english-spelling.apk   # 可安装的调试 APK
+├── english-spelling-v<版本号>.apk # 带版本号的调试 APK，用于发布
+├── english-spelling.apk   # 最新成功构建的副本，兼容局域网下载链接
 ├── install-qr.png         # 局域网下载安装二维码
 └── install.html           # 二维码安装页面
 ```

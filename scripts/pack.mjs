@@ -71,9 +71,11 @@ try {
 
   const source = join(root, 'android/app/build/outputs/apk/debug/app-debug.apk');
   if (!existsSync(source) || statSync(source).size === 0) throw new Error('Gradle 未生成有效的 APK。');
-  const destination = join(root, 'release/english-spelling.apk');
+  const destination = join(root, `release/english-spelling-v${version.version}.apk`);
   mkdirSync(dirname(destination), { recursive: true });
   copyFileSync(source, destination);
+  // Keep the stable download URL used by existing LAN QR codes working.
+  copyFileSync(source, join(root, 'release/english-spelling.apk'));
   console.log(`\n打包成功：${destination}\n大小：${(statSync(destination).size / 1024 / 1024).toFixed(1)} MB\n将 APK 复制到安卓平板，点击文件即可安装。`);
   try {
     await createInstallQr();
