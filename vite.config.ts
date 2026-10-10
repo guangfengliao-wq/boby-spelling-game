@@ -10,7 +10,7 @@ export default defineConfig({
       selfDestroying: process.env.BUILD_TARGET === 'android',
       injectRegister: process.env.BUILD_TARGET === 'android' ? false : 'auto',
       registerType: 'autoUpdate',
-      includeAssets: ['icon-192x192.png', 'icon-512x512.png'],
+      includeAssets: ['icon-192x192.png', 'icon-512x512.png', 'icon-maskable-512x512.png', 'favicon.png', 'apple-touch-icon.png'],
       manifest: {
         name: '英文拼写练习',
         short_name: '拼写游戏',
@@ -33,7 +33,7 @@ export default defineConfig({
             type: 'image/png'
           },
           {
-            src: 'icon-512x512.png',
+            src: 'icon-maskable-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
