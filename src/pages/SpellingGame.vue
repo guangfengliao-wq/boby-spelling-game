@@ -6,7 +6,7 @@
     </button>
 
     <div class="container">
-      <p class="learning-context">{{ currentUnit?.semesterName }} · {{ currentUnit?.name }}</p>
+      <p class="learning-context">{{ currentUnit?.semesterName }} · {{ !learning && gameState.isCustom.value ? '自定义默写' : currentUnit?.name }}</p>
       <!-- Progress Bar -->
       <div class="progress-section">
         <div class="progress-info">
@@ -495,7 +495,7 @@ const submitCurrentAnswer = async () => {
     launchConfetti()
   } else {
     playWrong(playAnswerWord)
-    if (!props.learning) playerProfile.recordErrorWord(currentQuestion.value, currentUnitId.value)
+    if (!props.learning) playerProfile.recordErrorWord(currentQuestion.value, gameState.currentQuestion.value?.unitId ?? currentUnitId.value)
   }
   if (!props.learning) playerProfile.updateScore(isCorrect, 10)
 

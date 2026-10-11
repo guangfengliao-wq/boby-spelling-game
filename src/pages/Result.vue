@@ -3,7 +3,7 @@
     <div class="container">
       <div class="result-content fade-in">
         <h1 class="result-title">🎉 本局完成！</h1>
-        <p class="learning-context">{{ currentUnit?.semesterName }} · {{ currentUnit?.name }}</p>
+        <p class="learning-context">{{ currentUnit?.semesterName }} · {{ gameState.isCustom.value ? '自定义默写' : currentUnit?.name }}</p>
 
         <div class="result-stats">
           <div class="stat-box">
@@ -134,6 +134,11 @@ const toggleUnit = (unitId: string) => {
 }
 
 const playAgain = () => {
+  if (gameState.isCustom.value) {
+    resetGame()
+    router.push('/custom-dictation')
+    return
+  }
   resetGame()
   router.push('/select')
 }

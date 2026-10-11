@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import UnitSelect from '../pages/UnitSelect.vue'
+import CustomDictation from '../pages/CustomDictation.vue'
 import SpellingGame from '../pages/SpellingGame.vue'
 import Result from '../pages/Result.vue'
 import ErrorReview from '../pages/ErrorReview.vue'
@@ -11,6 +12,7 @@ import Phonetics from '../pages/Phonetics.vue'
 const routes = [
   { path: '/', component: Home, name: 'Home' },
   { path: '/select', component: UnitSelect, name: 'UnitSelect' },
+  { path: '/custom-dictation', component: CustomDictation, name: 'CustomDictation' },
   { path: '/game', component: SpellingGame, name: 'SpellingGame' },
   { path: '/learn', component: WordLearn, name: 'WordLearn' },
   { path: '/career', component: Career, name: 'Career' },

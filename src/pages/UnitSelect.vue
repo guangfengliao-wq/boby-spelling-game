@@ -9,6 +9,11 @@
       <p v-if="units.length === 0" class="empty-state">本学期单词表待补充，请返回首页选择其他学期。</p>
 
       <div class="units-grid">
+        <button v-if="!isLearning" class="unit-card fade-in" :disabled="!units.some(unit => unit.words.length)" @click="router.push('/custom-dictation')">
+          <div class="unit-icon">✏️</div>
+          <h3>自定义默写</h3>
+          <p>自己选词，跨单元练习</p>
+        </button>
         <button
           v-for="unit in units"
           :key="unit.id"

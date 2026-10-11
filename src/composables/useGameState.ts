@@ -7,8 +7,9 @@ import { saveDictationRecord } from '../utils/career'
 
 // 模块级单例状态，所有页面共享同一份数据
 const currentUnitId = ref('')
+const isCustom = ref(false)
 const currentQuestionIndex = ref(0)
-const questions = ref<Word[]>([])
+const questions = ref<(Word & { unitId?: string })[]>([])
 const score = ref(0)
 const answered = ref<{ word: Word; correct: boolean }[]>([])
 const elapsedSeconds = ref(0)       // 本局已用秒数
@@ -19,11 +20,12 @@ let tickTimer: ReturnType<typeof setInterval> | null = null
 const GAME_STATE_KEY = 'vue_word_game_state'
 
 interface GameState {
+  isCustom?: boolean
   sessionId?: string
   startedAt?: number
   currentUnitId: string
   currentQuestionIndex: number
-  questions: Word[]
+  questions: (Word & { unitId?: string })[]
   score: number
   answered: { word: Word; correct: boolean }[]
   elapsedSeconds: number
@@ -31,6 +33,7 @@ interface GameState {
 
 function saveGameState() {
   const state: GameState = {
+    isCustom: isCustom.value,
     sessionId,
     startedAt: gameStartTime.value,
     currentUnitId: currentUnitId.value,
@@ -53,6 +56,7 @@ function clearGameState() {
 }
 
 function restoreGameState(state: GameState) {
+  isCustom.value = state.isCustom ?? false
   sessionId = state.sessionId || crypto.randomUUID()
   gameStartTime.value = state.startedAt || Date.now()
   currentUnitId.value = normalizeUnitId(state.currentUnitId)
@@ -84,6 +88,31 @@ export function useGameState() {
   const isGameEnd = computed(() => currentQuestionIndex.value >= questions.value.length)
 
   function startGame(unitId: string, questionCount?: number) {
+    const count = questionCount ?? (useSettings().dictateAllWords.value ? getUnit(unitId)?.words.length ?? 0 : 10)
+    beginGame(unitId, getRandomWords(unitId, count), false)
+  }
+
+  function startCustomGame(selections: { unitId: string; wordIndex: number }[]) {
+    const seen = new Set<string>()
+    const selected = selections.flatMap(({ unitId, wordIndex }) => {
+      const unit = getUnit(unitId)
+      const word = unit?.words[wordIndex]
+      const key = `${unit?.id}:${wordIndex}`
+      if (!word || unit?.semesterId !== useSemester().selectedSemesterId.value || seen.has(key)) return []
+      seen.add(key)
+      return [{ ...word, unitId: unit.id }]
+    })
+    if (!selected.length) return false
+    for (let i = selected.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[selected[i], selected[j]] = [selected[j], selected[i]]
+    }
+    beginGame(selected[0].unitId, selected, true)
+    return true
+  }
+
+  function beginGame(unitId: string, wordList: (Word & { unitId?: string })[], custom: boolean) {
+    isCustom.value = custom
     sessionId = crypto.randomUUID()
     gameStartTime.value = Date.now()
     elapsedSeconds.value = 0
@@ -91,8 +120,7 @@ export function useGameState() {
     currentQuestionIndex.value = 0
     score.value = 0
     answered.value = []
-    const count = questionCount ?? (useSettings().dictateAllWords.value ? getUnit(unitId)?.words.length ?? 0 : 10)
-    questions.value = getRandomWords(unitId, count)
+    questions.value = wordList
     startTick()
     saveGameState()
   }
@@ -119,7 +147,7 @@ export function useGameState() {
       startedAt: gameStartTime.value,
       updatedAt: Date.now(),
       semesterName: unit?.semesterName ?? '',
-      unitName: unit?.name ?? currentUnitId.value,
+      unitName: isCustom.value ? '自定义默写' : unit?.name ?? currentUnitId.value,
       unitId: currentUnitId.value,
       score: score.value,
       elapsedSeconds: elapsedSeconds.value,
@@ -142,6 +170,7 @@ export function useGameState() {
   }
 
   function resetGame() {
+    isCustom.value = false
     currentUnitId.value = ''
     currentQuestionIndex.value = 0
     questions.value = []
@@ -153,6 +182,8 @@ export function useGameState() {
   }
 
   return {
+    isCustom,
+    startCustomGame,
     currentUnitId,
     currentQuestionIndex,
     questions,
