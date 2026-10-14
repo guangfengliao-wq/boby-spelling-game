@@ -157,3 +157,42 @@ node --test scripts/release.test.mjs
 - [其他音标录音说明](public/audio/phonetics/ATTRIBUTION.txt)
 
 BBC 录音的版权归 BBC 所有，不属于其他音源的 MIT 许可范围。当前仓库没有为整个项目提供统一的 LICENSE 文件；公开可读不代表所有代码和素材均可自由再分发，复用时请分别确认相关授权。
+
+## Lark 发布通知
+
+本机已通过 Git 忽略的 `.env.release.local` 配置群机器人。其他电脑可在项目根目录创建同名文件：
+
+```dotenv
+LARK_WEBHOOK=https://open.larksuite.com/open-apis/bot/v2/hook/替换为机器人地址
+# 如果机器人开启签名校验，再配置：
+# LARK_SIGNING_SECRET=机器人签名密钥
+```
+
+也可通过环境变量提供这些配置（环境变量优先）。不要提交 Webhook 或签名密钥。需要 Node.js 22 或更高版本。
+
+执行 `npm run release` 上传并校验 APK、发布 GitHub Release 后，会发送绿色卡片，包含版本、最近提交作者、`RELEASE_NOTES.md` 更新说明，以及“下载 APK”和“查看发布详情”按钮。下载链接固定指向本次版本的 GitHub Release 附件，设备需能访问 GitHub；私有仓库需要访问权限。
+
+未配置 Webhook 时只跳过通知。GitHub 发布失败时不会发送成功通知。通知失败会保留已发布 APK，并使命令返回非零退出码；修复配置或网络后重新运行发布命令即可重试，相同 APK 不会重复上传。每次重新运行发布命令都会再次发送通知。二维码生成失败发生在通知之后，此时已发出的通知仍有效。
+
+机器人若开启关键词校验，可将关键词设为“单词本”（卡片标题包含此词）。若开启签名校验，必须配置签名密钥。
+
+`npm run release -- --dry-run` 仍只做本地检查，不读取通知配置、不发送消息。通知测试通过模拟请求运行，不会向群发送消息：
+
+```bash
+node --test scripts/release.test.mjs scripts/lark-notify.test.mjs
+```
+
+### 在通知卡片中显示下载二维码
+
+Webhook 本身不能上传图片。要直接显示二维码，在 [Lark 开放平台](https://open.larksuite.com/app) 创建企业自建应用，开启机器人能力，在权限管理中开通图片上传接口所需权限（上传图片和附件，`im:resource`），创建版本并发布/完成组织审批，使权限生效。然后在本地 `.env.release.local` 增加：
+
+```dotenv
+LARK_APP_ID=cli_你的应用ID
+LARK_APP_SECRET=你的应用密钥
+```
+
+发布通知会将本次版本的 APK 下载链接在本地编码为 PNG，通过应用访问令牌上传到 Lark，再将返回的 `image_key` 嵌入原 Webhook 卡片。二维码与“下载 APK”按钮指向同一个固定版本地址，不使用第三方二维码服务；App Secret 和访问令牌不会写入通知内容。
+
+尚未配置应用凭据时保留原文字和下载按钮，并提示二维码未启用。只填写一个凭据、认证失败或上传图片失败时会明确报错，不发送缺少二维码的成功卡片；已经发布的 APK 不受影响，修复后可重跑发布命令。
+
+官方参考：[上传图片](https://open.larksuite.com/document/server-docs/im-v1/image/create)。

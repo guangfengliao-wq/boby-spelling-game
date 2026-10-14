@@ -1,6 +1,7 @@
 import { spawnSync } from 'node:child_process';
 import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import QRCode from 'qrcode';
+import { notifyLark, validateWebhook } from './lark-notify.mjs';
 import { createHash } from 'node:crypto';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -107,6 +108,11 @@ async function main() {
     console.log('检查完成：未读取凭据、未连接 GitHub、未上传。');
     return;
   }
+  const larkConfig = join(root, '.env.release.local');
+  if (existsSync(larkConfig)) process.loadEnvFile(larkConfig);
+  const webhook = process.env.LARK_WEBHOOK;
+  if (webhook) validateWebhook(webhook);
+  else console.warn('未配置 LARK_WEBHOOK，本次发布将跳过群通知。');
   if (git(['status', '--porcelain', '--untracked-files=no'])) throw new Error('请先提交并推送已跟踪文件的修改，再发布 APK。');
   const remoteHeads = git(['ls-remote', 'origin', 'refs/heads/*']);
   if (!remoteHeads.split('\n').some(line => line.startsWith(`${commit}\t`))) {
@@ -143,6 +149,20 @@ async function main() {
   const notes = existsSync(notesPath) ? readFileSync(notesPath, 'utf8') : '';
   const result = await publishRelease({ api, repository, version, commit, filename, bytes, digest, notes });
   console.log(`发布完成：${result.release}\nAPK 下载：${result.download}`);
+  if (webhook) {
+    try {
+      await notifyLark({
+        webhook, secret: process.env.LARK_SIGNING_SECRET,
+        appId: process.env.LARK_APP_ID, appSecret: process.env.LARK_APP_SECRET,
+        version, actor: git(['log', '-1', '--pretty=format:%an']), notes, ...result,
+      });
+      console.log('Lark 发布通知已发送（含 APK 下载链接）。');
+      if (!process.env.LARK_APP_ID) console.warn('未配置 LARK_APP_ID / LARK_APP_SECRET，通知中暂不显示二维码。');
+    } catch (error) {
+      console.error(`APK 已发布，但群通知失败：${error.message} 可重新运行 npm run release 重试通知；相同 APK 不会重复上传。`);
+      process.exitCode = 1;
+    }
+  }
   try {
     const qr = await createReleaseQr(result.download, version);
     console.log(await QRCode.toString(result.download, { type: 'terminal', small: true }));
