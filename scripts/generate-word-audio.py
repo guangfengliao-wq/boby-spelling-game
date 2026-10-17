@@ -1,5 +1,5 @@
 """One-time asset generation; never needed by npm run pack or the installed app.
-Install edge-tts==7.2.8 and imageio-ffmpeg==0.6.0 into .audio-tools,
+Install edge-tts==7.3.1 and imageio-ffmpeg==0.6.0 into .audio-tools,
 then run this script with Python 3. Use --refresh-letters to rebuild letter clips.
 """
 import asyncio
@@ -78,7 +78,7 @@ async def main():
     (OUT / 'SOURCE.txt').write_text(
         f'Synthetic English speech generated with Microsoft Edge TTS ({VOICE}, rate {RATE}).\n'
         f'Letter clips: rate {LETTER_RATE}, leading/trailing silence trimmed with FFmpeg.\n'
-        'Generation tool: edge-tts 7.2.8, https://github.com/rany2/edge-tts\n'
+        f'Generation tool: edge-tts {edge_tts.__version__}, https://github.com/rany2/edge-tts\n'
         'These MP3 files are bundled assets. Playback does not contact any speech service.\n'
         'Pronunciation expansions: Mr -> Mister; Ms -> Ms.; try sth on -> try something on; '
         'be about to do sth -> be about to do something.\n', encoding='utf-8')

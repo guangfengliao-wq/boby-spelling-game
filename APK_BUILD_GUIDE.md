@@ -89,7 +89,7 @@ BBC 音频直接提取自原始互动音标表，不调整音高、语速，也�
 只有新增词条时才需要重新生成音频（此步骤会将英语词条发送到微软 Edge 语音服务，需要联网）：
 
 ```powershell
-python -m pip install --target .audio-tools edge-tts==7.2.8
+python -m pip install --upgrade --target .audio-tools edge-tts==7.3.1
 python scripts/generate-word-audio.py
 npm run pack
 ```
