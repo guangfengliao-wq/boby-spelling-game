@@ -4,9 +4,10 @@
     <button class="btn-back" @click="goBack" title="返回">
       <span>← 返回</span>
     </button>
+    <button v-if="learning" class="btn-back btn-dictation" type="button" :disabled="!totalQuestions" @click="goToDictation" :title="isCustomLearning ? '默写本次自定义学习的全部单词' : '开始本单元默写'">默写</button>
 
     <div class="container">
-      <p class="learning-context">{{ currentUnit?.semesterName }} · {{ !learning && gameState.isCustom.value ? '自定义默写' : currentUnit?.name }}</p>
+      <p class="learning-context">{{ isCustomLearning ? learningSemesterName : currentUnit?.semesterName }} · {{ isCustomLearning ? '自定义学习' : !learning && gameState.isCustom.value ? '自定义默写' : currentUnit?.name }}</p>
       <!-- Progress Bar -->
       <div class="progress-section">
         <div class="progress-info">
@@ -120,7 +121,8 @@
       <!-- Game End -->
       <div v-else class="game-end">
         <template v-if="learning">
-          <p>{{ totalQuestions ? '🎉 本单元学习完成！' : '本单元暂无单词' }}</p>
+          <p>{{ isCustomLearning ? (totalQuestions ? '🎉 所选单词学习完成！' : '尚未选择学习单词') : (totalQuestions ? '🎉 本单元学习完成！' : '本单元暂无单词') }}</p>
+          <button v-if="isCustomLearning" class="btn btn-secondary" @click="router.push('/custom-learn')">调整学习范围</button>
           <button class="btn btn-secondary" @click="router.push('/select?mode=learn')">返回单元</button>
           <button v-if="totalQuestions" class="btn btn-primary" @click="restartLearning">再学一遍</button>
         </template>
@@ -174,17 +176,24 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useGameState } from '../composables/useGameState'
 import { usePlayerProfile } from '../composables/usePlayerProfile'
-import { getUnit } from '../utils/wordLoader'
+import { getUnit, getSemesters } from '../utils/wordLoader'
+import { useSemester } from '../composables/useSemester'
 import { useLearningState } from '../composables/useLearningState'
 import { createWordAudioPlayer, hasWordAudio } from '../utils/wordAudio'
 import { useSettings } from '../composables/useSettings'
 
 const props = defineProps<{ learning?: boolean }>()
 const route = useRoute()
+const isCustomLearning = props.learning && route.query.custom === 'true'
+const { selectedSemesterId } = useSemester()
+const learningSemesterName = computed(() => getSemesters().find(semester => semester.id === selectedSemesterId.value)?.name)
 
 const router = useRouter()
 const gameState = useGameState()
 const playerProfile = usePlayerProfile()
+const learningState = props.learning
+  ? useLearningState(typeof route.query.unit === 'string' ? route.query.unit : '', isCustomLearning)
+  : null
 
 const {
   currentUnitId,
@@ -195,7 +204,7 @@ const {
   currentQuestion,
   isGameEnd,
   submitAnswer
-} = props.learning ? useLearningState(typeof route.query.unit === 'string' ? route.query.unit : '') : gameState
+} = learningState ?? gameState
 const currentUnit = computed(() => getUnit(currentUnitId.value))
 const learningHint = ref('')
 const speechError = ref('')
@@ -419,6 +428,13 @@ const handleKeydown = (e: KeyboardEvent) => {
     e.preventDefault()
     onKeyPress(key)
   }
+}
+
+const goToDictation = () => {
+  if (!learningState?.startDictation()) return
+  if (advanceTimer) clearTimeout(advanceTimer)
+  stopSpeech()
+  router.push('/game')
 }
 
 const goBack = () => {
@@ -724,6 +740,9 @@ onUnmounted(() => {
 <style scoped>
 .ghost-letter { color: rgba(79, 70, 229, .3); }
 .learning-tip { text-align: center; color: #777; font-size: 14px; margin: 12px 0; }
+.btn-dictation { left: auto; right: max(20px, env(safe-area-inset-right)); top: max(20px, env(safe-area-inset-top)); min-height: 44px; min-width: 72px; }
+.btn-dictation:disabled { opacity: .5; cursor: default; }
+.btn-dictation:focus-visible { outline: 3px solid #ffe080; outline-offset: 3px; }
 .speak-button { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 50%; background: #eef0ff; color: #667eea; font-size: inherit; padding: .15em; width: 1em; height: 1em; margin-left: .25em; cursor: pointer; vertical-align: -.1em; transition: background .15s ease, transform .15s ease; }
 .speak-button svg { width: 100%; height: 100%; }
 .speak-button:hover:not(:disabled) { background: #e0e5ff; }

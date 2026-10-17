@@ -1,8 +1,8 @@
 <template>
   <div class="custom-page">
     <div class="custom-container">
-      <button class="back" @click="router.push('/select')">← 返回单元列表</button>
-      <h1>自定义默写</h1>
+      <button class="back" @click="router.push(isLearning ? '/select?mode=learn' : '/select')">← 返回单元列表</button>
+      <h1>{{ isLearning ? '自定义学习' : '自定义默写' }}</h1>
       <p class="subtitle">{{ semesterName }} · 勾选想练习的单词或短语，可跨单元选择</p>
 
       <div class="filters">
@@ -39,8 +39,8 @@
       <p v-if="!visibleEntries.length" class="empty">{{ entries.length ? '没有符合条件的单词，请调整筛选或搜索。' : '本学期暂无单词，请返回首页选择其他学期。' }}</p>
 
       <div class="start-bar">
-        <div aria-live="polite"><strong>已选 {{ selectedEntries.length }} 个</strong><p>全部默写，随机排序</p></div>
-        <button class="btn btn-primary" :disabled="!selectedEntries.length" @click="start">开始默写</button>
+        <div aria-live="polite"><strong>已选 {{ selectedEntries.length }} 个</strong><p>{{ isLearning ? '全部学习，按单元顺序' : '全部默写，随机排序' }}</p></div>
+        <button class="btn btn-primary" :disabled="!selectedEntries.length" @click="start">{{ isLearning ? '开始学习' : '开始默写' }}</button>
       </div>
     </div>
   </div>
@@ -48,30 +48,30 @@
 
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { getAllUnits, getSemesters } from '../utils/wordLoader'
 import { useSemester } from '../composables/useSemester'
 import { useGameState } from '../composables/useGameState'
+import { getSelectionEntries, loadSelectionKeys, selectionStorageKey } from '../utils/customWordSelection'
 
 const router = useRouter()
+const route = useRoute()
+const isLearning = computed(() => route.name === 'CustomLearn')
 const { selectedSemesterId } = useSemester()
 const { startCustomGame } = useGameState()
 const units = computed(() => getAllUnits(selectedSemesterId.value))
 const semesterName = computed(() => getSemesters().find(semester => semester.id === selectedSemesterId.value)?.name)
-const entries = computed(() => units.value.flatMap(unit => unit.words.map((word, wordIndex) => ({
-  ...word, unitId: unit.id, wordIndex, key: JSON.stringify([unit.id, wordIndex, word.en, word.cn])
-}))))
+const entries = computed(() => getSelectionEntries(selectedSemesterId.value))
 type Entry = typeof entries.value[number]
-const storageKey = `customDictationSelection:${selectedSemesterId.value}`
-function loadSelection(): string[] {
-  try {
-    const saved: unknown = JSON.parse(localStorage.getItem(storageKey) ?? '[]')
-    const valid = new Set(entries.value.map(entry => entry.key))
-    return Array.isArray(saved) ? saved.filter((key): key is string => typeof key === 'string' && valid.has(key)) : []
-  } catch { return [] }
-}
-const selectedKeys = ref<string[]>(loadSelection())
-watch(selectedKeys, value => localStorage.setItem(storageKey, JSON.stringify(value)), { deep: true })
+const storageKey = computed(() => selectionStorageKey(selectedSemesterId.value, isLearning.value))
+const selectedKeys = ref<string[]>(loadSelectionKeys(selectedSemesterId.value, isLearning.value))
+watch(storageKey, () => {
+  selectedKeys.value = loadSelectionKeys(selectedSemesterId.value, isLearning.value)
+  unitFilter.value = ''
+  search.value = ''
+  onlySelected.value = false
+}, { flush: 'sync' })
+watch(selectedKeys, value => localStorage.setItem(storageKey.value, JSON.stringify(value)), { deep: true, flush: 'sync' })
 const selectedSet = computed(() => new Set(selectedKeys.value))
 const selectedEntries = computed(() => entries.value.filter(entry => selectedSet.value.has(entry.key)))
 const unitFilter = ref('')
@@ -96,6 +96,11 @@ function toggleGroup(group: Entry[]) {
     : [...new Set([...selectedKeys.value, ...keys])]
 }
 function start() {
+  if (!selectedEntries.value.length) return
+  if (isLearning.value) {
+    router.push({ path: '/learn', query: { custom: 'true' } })
+    return
+  }
   if (startCustomGame(selectedEntries.value)) router.push('/game')
 }
 </script>

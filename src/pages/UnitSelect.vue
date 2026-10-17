@@ -9,10 +9,15 @@
       <p v-if="units.length === 0" class="empty-state">本学期单词表待补充，请返回首页选择其他学期。</p>
 
       <div class="units-grid">
-        <button v-if="!isLearning" class="unit-card fade-in" :disabled="!units.some(unit => unit.words.length)" @click="router.push('/custom-dictation')">
+        <button v-if="isLearning" class="unit-card fade-in" :disabled="!units.some(unit => unit.words.length)" @click="router.push('/wordbook')">
+          <div class="unit-icon">📖</div>
+          <h3>单词本</h3>
+          <p>预览全部单词，看音标听发音</p>
+        </button>
+        <button class="unit-card fade-in" :disabled="!units.some(unit => unit.words.length)" @click="router.push(isLearning ? '/custom-learn' : '/custom-dictation')">
           <div class="unit-icon">✏️</div>
-          <h3>自定义默写</h3>
-          <p>自己选词，跨单元练习</p>
+          <h3>{{ isLearning ? '自定义学习' : '自定义默写' }}</h3>
+          <p>自己选词，跨单元{{ isLearning ? '学习' : '练习' }}</p>
         </button>
         <button
           v-for="unit in units"

@@ -1,0 +1,16 @@
+British English phonetic data
+
+src/data/wordPhonetics.json contains a modified curriculum subset of:
+https://github.com/open-dict-data/ipa-dict/blob/43c3570eb3553bdd19fccd2bd0091534889af023/data/en_UK.txt
+Retrieved 2026-10-17.
+
+The upstream British data derives from ipacards by leoboiko (now melissaboiko):
+https://github.com/melissaboiko/ipacards
+This dataset retains its GNU GPL version 3 license. See GPL-3.0.txt.
+ipa-dict's repository license is also included in ipa-dict-MIT.txt.
+
+Modifications: curriculum subset, learner IPA symbol/stress notation, explicit
+curriculum readings for heteronyms, and supplemental words and phrases.
+The modified data is distributed under GPL-3.0. Its editable JSON source is
+provided at /data/wordPhonetics.json in the application distribution.
+Reproduction script: scripts/import-word-phonetics.mjs in the project source.
